@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Karoline — Portfólio & Embaixadora Estudantil do Google</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind configuration for custom colors & fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FFF9F0',
+                        charcoal: '#202124',
+                        lilas: '#EAE2FF',
+                        verde: '#DFF3E5',
+                        amarelo: '#FFF0B8',
+                        laranja: '#FFECE2',
+                        googleBlue: '#4285F4',
+                        googleRed: '#EA4335',
+                        googleYellow: '#FBBC05',
+                        googleGreen: '#34A853'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #FFF9F0;
+            color: #202124;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .cat-paw-bg {
+            background-image: radial-gradient(#202124 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            background-opacity: 0.03;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-3deg); }
+            75% { transform: rotate(3deg); }
+        }
+        .animate-wiggle:hover {
+            animation: wiggle 0.4s ease-in-out infinite;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF9F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #EAE2FF;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4c5ff;
+        }
+    </style>
+</head>
+<body class="bg-cream text-charcoal antialiased selection:bg-lilas selection:text-charcoal">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-charcoal/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#inicio" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-googleBlue rounded-xl p-1">
+                <!-- Cat Icon Logo -->
+                <div class="w-10 h-10 rounded-2xl bg-lilas flex items-center justify-center text-charcoal shadow-sm group-hover:scale-105 transition-transform">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5 5.5 3.5 7 3.5 8.5C3.5 10 4.5 11.5 6 12.5C5.5 14 5.5 16 6.5 18C7.5 20 10 21 12 21C14 21 16.5 20 17.5 18C18.5 16 18.5 14 18 12.5C19.5 11.5 20.5 10 20.5 8.5C20.5 7 19 5.5 17.5 5.5C16.5 3.5 14.5 2 12 2ZM9 9.5C9.5 9.5 10 10 10 10.5C10 11 9.5 11.5 9 11.5C8.5 11.5 8 11 8 10.5C8 10 8.5 9.5 9 9.5ZM15 9.5C15.5 9.5 16 10 16 10.5C16 11 15.5 11.5 15 11.5C14.5 11.5 14 11 14 10.5C14 10 14.5 9.5 15 9.5ZM12 16C10.5 16 9.5 15 9.5 14H14.5C14.5 15 13.5 16 12 16Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg tracking-tight block">Beatriz Karoline</span>
+                    <span class="text-xs text-charcoal/60 font-medium flex items-center gap-1">
+                        <span class="inline-block w-2 h-2 rounded-full bg-googleBlue"></span> Embaixadora Estudantil Google
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-1 bg-white/70 border border-charcoal/10 rounded-full px-4 py-1.5 shadow-sm">
+                <a href="#inicio" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Início</a>
+                <a href="#sobre" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Sobre</a>
+                <a href="#google" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors text-googleBlue font-semibold">Google & Comunidade</a>
+                <a href="#projetos" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Projetos</a>
+                <a href="#experiencia" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Novelo de Ideias</a>
+                <a href="#trajetoria" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Trajetória</a>
+                <a href="#contato" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Contato</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden p-2.5 rounded-xl bg-lilas/50 text-charcoal focus:outline-none focus:ring-2 focus:ring-googleBlue">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-charcoal/10 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#inicio" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Início</a>
+            <a href="#sobre" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Sobre</a>
+            <a href="#google" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60 text-googleBlue font-semibold">Google & Comunidade</a>
+            <a href="#projetos" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Projetos</a>
+            <a href="#experiencia" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Novelo de Ideias</a>
+            <a href="#trajetoria" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Trajetória</a>
+            <a href="#contato" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <!-- Decorative blobs -->
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-lilas/30 via-verde/20 to-amarelo/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left text column -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-verde border border-verde/60 text-charcoal text-xs font-semibold tracking-wide shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-googleGreen animate-pulse"></span>
+                        Embaixadora Estudantil do Google · Grupo 3
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight leading-[1.1]">
+                        Curiosidade de gato. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-googleBlue via-purple-600 to-googleRed">Vontade de transformar.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-charcoal/80 max-w-2xl font-normal leading-relaxed">
+                        Conecto tecnologia, criatividade e pessoas para explorar ideias, compartilhar descobertas e construir projetos com propósito.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#projetos" class="px-7 py-4 rounded-2xl bg-charcoal text-cream font-semibold hover:bg-charcoal/90 shadow-md hover:shadow-lg transition-all flex items-center gap-3 group">
+                            Explorar meus projetos
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#google" class="px-7 py-4 rounded-2xl bg-lilas/80 text-charcoal font-semibold hover:bg-lilas transition-all shadow-sm border border-lilas/50 flex items-center gap-2">
+                            Conhecer minha atuação
+                        </a>
+                    </div>
+
+                    <!-- Quick highlights pills -->
+                    <div class="pt-6 border-t border-charcoal/10 flex flex-wrap items-center gap-6 text-sm text-charcoal/70">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-paw text-googleBlue"></i>
+                            <span>IA & Experimentação</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-comments text-googleGreen"></i>
+                            <span>Comunidade & Impacto</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-googleYellow"></i>
+                            <span>Aprendizagem Criativa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Illustration / Chibi Banner -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md bg-white border border-charcoal/10 rounded-3xl p-6 sm:p-8 shadow-xl cat-paw-bg animate-float">
+                        
+                        <!-- Chibi Speech Bubble -->
+                        <div class="absolute -top-6 -right-4 bg-lilas text-charcoal text-xs font-semibold px-4 py-2 rounded-2xl shadow-md border border-charcoal/10 flex items-center gap-2 animate-bounce">
+                            <span>🐱 Oi! Eu sou o Chibi. Bora seguir esse fio?</span>
+                        </div>
+
+                        <!-- Creative Workspace Illustration with SVG -->
+                        <div class="relative bg-gradient-to-b from-amarelo/30 to-verde/30 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[260px] border border-charcoal/5">
+                            
+                            <!-- SVG Chibi & Setup -->
+                            <svg class="w-48 h-48 drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Laptop desk -->
+                                <rect x="30" y="130" width="140" height="12" rx="6" fill="#202124"/>
+                                <polygon points="50,142 150,142 165,160 35,160" fill="#EAE2FF"/>
+                                <!-- Laptop Screen -->
+                                <rect x="70" y="75" width="60" height="45" rx="4" fill="#202124"/>
+                                <rect x="73" y="78" width="54" height="39" rx="2" fill="#FFF9F0"/>
+                                <!-- Google-like colors on screen -->
+                                <circle cx="85" cy="90" r="4" fill="#4285F4"/>
+                                <line x1="95" y1="90" x2="115" y2="90" stroke="#34A853" stroke-width="3" stroke-linecap="round"/>
+                                <line x1="85" y1="102" x2="110" y2="102" stroke="#EA4335" stroke-width="3" stroke-linecap="round"/>
+                                
+                                <!-- Chibi Cat Head (Black & White tuxedo, green eyes) -->
+                                <path d="M100 35 C115 35 125 45 125 60 C125 72 115 80 100 80 C85 80 75 72 75 60 C75 45 85 35 100 35 Z" fill="#202124"/>
+                                <!-- Ears -->
+                                <polygon points="78,42 65,22 88,36" fill="#202124"/>
+                                <polygon points="122,42 135,22 112,36" fill="#202124"/>
+                                <polygon points="79,40 70,26 86,36" fill="#FFECE2"/>
+                                <polygon points="121,40 130,26 114,36" fill="#FFECE2"/>
+                                <!-- White patch on face -->
+                                <path d="M88 60 Q100 50 112 60 Q115 75 100 78 Q85 75 88 60 Z" fill="#FFF9F0"/>
+                                <!-- Green Eyes -->
+                                <ellipse cx="91" cy="58" rx="3.5" ry="5" fill="#34A853"/>
+                                <ellipse cx="109" cy="58" rx="3.5" ry="5" fill="#34A853"/>
+                                <circle cx="92" cy="57" r="1.5" fill="#FFF"/>
+                                <circle cx="110" cy="57" r="1.5" fill="#FFF"/>
+                                <!-- Nose & Whiskers -->
+                                <polygon points="100,64 97,61 103,61" fill="#EA4335"/>
+                                <line x1="85" y1="67" x2="70" y2="65" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="85" y1="71" x2="68" y2="72" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="115" y1="67" x2="130" y2="65" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="115" y1="71" x2="132" y2="72" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
+                                
+                                <!-- Floating yarn ball -->
+                                <circle cx="160" cy="115" r="14" fill="#EA4335"/>
+                                <path d="M152 108 Q165 100 168 118" stroke="#FFF" stroke-width="2" fill="none"/>
+                                <path d="M148 115 Q155 125 168 112" stroke="#FFF" stroke-width="2" fill="none"/>
+                            </svg>
+
+                            <div class="text-center mt-2">
+                                <span class="text-xs font-semibold px-3 py-1 bg-white rounded-full shadow-sm border border-charcoal/10 text-charcoal">
+                                    Mascote do Grupo 3 · Embaixadores Google
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Card footer info -->
+                        <div class="mt-6 flex items-center justify-between text-xs text-charcoal/70">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-googleBlue"></i> Criatividade & Comunidade</span>
+                            <span class="font-semibold text-charcoal">Beatriz Karoline</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre - Minhas Sete Vidas Criativas -->
+    <section id="sobre" class="py-20 bg-white border-y border-charcoal/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Sobre Mim</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
+                    Minhas sete vidas criativas
+                </h2>
+                <p class="text-base sm:text-lg text-charcoal/70">
+                    Assim como diz a lenda dos gatos, minha trajetória se desdobra em múltiplos universos interconectados. Aqui estão as dimensões que movem meu dia a dia:
+                </p>
+            </div>
+
+            <!-- 7 Dimensions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Dimension 1 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-googleBlue/10 text-googleBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">1. Tecnologia & Prototipação</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Transformar ideias em protótipos funcionais, explorando ferramentas modernas, desenvolvimento e resolução de problemas práticos.
+                    </p>
+                </div>
+
+                <!-- Dimension 2 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">2. IA & Experimentação</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Uso ativo de Inteligência Artificial — como Gemini e Gemini Canvas — para acelerar fluxos de criação, estudo e inovação.
+                    </p>
+                </div>
+
+                <!-- Dimension 3 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-googleRed/10 text-googleRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">3. Comunicação & Conteúdo</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Produção de conteúdos digitais, vídeos e artigos que traduzem conceitos complexos em experiências acessíveis e cativantes.
+                    </p>
+                </div>
+
+                <!-- Dimension 4 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-googleGreen/10 text-googleGreen flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">4. Educação & Compartilhamento</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Aproximar pessoas do conhecimento através de oficinas, mentorias e iniciativas colaborativas em redes de aprendizagem.
+                    </p>
+                </div>
+
+                <!-- Dimension 5 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-googleYellow/20 text-yellow-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">5. Design & Experiências</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Atenção rigorosa à estética, usabilidade, identidade visual e harmonia editorial em cada projeto entregue.
+                    </p>
+                </div>
+
+                <!-- Dimension 6 -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-2">6. Games & Narrativas</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Exploração de jogos educacionais e narrativas interativas como ferramentas potentes de engajamento e reflexão.
+                    </p>
+                </div>
+
+                <!-- Dimension 7 (Spans 2 on lg or centered) -->
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group lg:col-span-3 md:col-span-2">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-users-viewfinder"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl mb-1">7. Comunidade & Impacto Social</h3>
+                                <p class="text-sm text-charcoal/70">
+                                    Conectar pessoas, fortalecer redes estudantis e criar soluções voltadas para sustentabilidade, inclusão e bem-estar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-2.5 rounded-2xl bg-lilas text-charcoal text-xs font-semibold shrink-0">
+                            🐾 A base de tudo o que faço
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Google & Comunidade Section -->
+    <section id="google" class="py-20 bg-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-googleBlue/10 text-googleBlue">Embaixadora Google</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
+                    Aprender, experimentar e compartilhar.
+                </h2>
+                <p class="text-base sm:text-lg text-charcoal/70">
+                    Como Embaixadora Estudantil do Google e integrante do Grupo 3, atuo aproximando comunidades acadêmicas de ferramentas inovadoras, inteligência artificial e aprendizagem criativa.
+                </p>
+            </div>
+
+            <!-- 3 Pillars Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-googleBlue text-white flex items-center justify-center text-lg mb-6 shadow-sm">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3">1. Explorar ferramentas</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Mergulho constante em novas tecnologias, experimentando o potencial criativo de plataformas Google e fluxos com IA.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-googleRed text-white flex items-center justify-center text-lg mb-6 shadow-sm">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3">2. Transformar em conteúdo</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Produção de materiais educativos e demonstrações práticas mostrando como o Gemini e o Gemini Canvas facilitam a ideação.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-googleGreen text-white flex items-center justify-center text-lg mb-6 shadow-sm">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3">3. Compartilhar e conectar</h3>
+                    <p class="text-sm text-charcoal/70 leading-relaxed">
+                        Articulação com estudantes, trocas de experiências no Grupo 3 e fomento a comunidades focadas em impacto e tecnologia.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Spotlight Banner -->
+            <div class="bg-gradient-to-r from-lilas/40 via-verde/40 to-amarelo/40 border border-charcoal/10 rounded-3xl p-8 sm:p-12 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="space-y-4 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-charcoal text-xs font-semibold shadow-sm">
+                        <i class="fa-solid fa-shield-cat text-googleBlue"></i> Grupo 3 · Embaixadores Estudantis
+                    </div>
+                    <h3 class="font-display font-bold text-2xl sm:text-3xl">Curiosidade guiada por propósito</h3>
+                    <p class="text-sm sm:text-base text-charcoal/80 leading-relaxed">
+                        O apoio do programa me permite conectar estudantes a oportunidades de aprendizado e prototipação ágil. Cada encontro é uma chance de inspirar novas trajetórias na tecnologia.
+                    </p>
+                </div>
+                <div class="shrink-0 flex gap-3">
+                    <div class="w-16 h-16 rounded-2xl bg-googleBlue/20 flex items-center justify-center text-googleBlue text-2xl shadow-sm">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="w-16 h-16 rounded-2xl bg-googleGreen/20 flex items-center justify-center text-googleGreen text-2xl shadow-sm">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Catálogo de Projetos Section -->
+    <section id="projetos" class="py-20 bg-white border-t border-charcoal/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-verde text-charcoal">Portfólio de Inovação</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
+                    Projetos & Soluções
+                </h2>
+                <p class="text-base sm:text-lg text-charcoal/70">
+                    Explore uma seleção de trabalhos multidisciplinares que unem inteligência artificial, impacto social, educação e criatividade.
+                </p>
+            </div>
+
+            <!-- Search and Filters Bar -->
+            <div class="bg-cream border border-charcoal/10 rounded-3xl p-4 sm:p-6 mb-10 shadow-sm space-y-4">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <!-- Search Input -->
+                    <div class="relative w-full md:w-96">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/40"></i>
+                        <input type="text" id="project-search" placeholder="Buscar por nome ou assunto..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-charcoal/15 text-sm focus:outline-none focus:ring-2 focus:ring-googleBlue transition-all">
+                    </div>
+                    
+                    <!-- Results counter & Clear filter -->
+                    <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+                        <span id="project-count" class="text-xs font-semibold text-charcoal/60">Mostrando todos os projetos</span>
+                        <button id="clear-filters" class="px-4 py-2 rounded-xl bg-white border border-charcoal/15 text-xs font-semibold hover:bg-lilas/40 transition-all text-charcoal">
+                            Limpar filtros
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Filters -->
+                <div id="category-filters" class="flex flex-wrap gap-2 pt-2 border-t border-charcoal/10">
+                    <button data-category="all" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-charcoal text-cream transition-all shadow-sm">Todos</button>
+                    <button data-category="IA" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">IA</button>
+                    <button data-category="Educação" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Educação</button>
+                    <button data-category="Comunidade" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Comunidade</button>
+                    <button data-category="Saúde" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Saúde</button>
+                    <button data-category="Sustentabilidade" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Sustentabilidade</button>
+                    <button data-category="Games" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Games</button>
+                    <button data-category="Design e Produto" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Design e Produto</button>
+                    <button data-category="Impacto Social" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Impacto Social</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be dynamically rendered via JS -->
+            </div>
+
+            <!-- Empty State (hidden by default) -->
+            <div id="empty-state" class="hidden text-center py-16 space-y-4">
+                <div class="w-16 h-16 rounded-3xl bg-lilas mx-auto flex items-center justify-center text-2xl text-charcoal">
+                    <i class="fa-solid fa-cat"></i>
+                </div>
+                <h3 class="font-display font-bold text-xl">Nenhum projeto encontrado</h3>
+                <p class="text-sm text-charcoal/60 max-w-sm mx-auto">Tente buscar por outro termo ou limpar os filtros para ver todos os trabalhos.</p>
+                <button onclick="resetFilters()" class="px-5 py-2.5 rounded-xl bg-charcoal text-cream text-xs font-semibold shadow-sm">Ver todos os projetos</button>
+            </div>
+
+            <!-- View More / Toggle Catalog if needed -->
+            <div class="mt-12 text-center">
+                <p class="text-xs text-charcoal/60">
+                    <i class="fa-solid fa-circle-info text-googleBlue mr-1"></i> Seleção combinada entre fontes oficiais e repositórios verificados (LinkedIn e portfólio anterior).
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Microexperiência Interativa: Novelo de Ideias -->
+    <section id="experiencia" class="py-20 bg-cream border-t border-charcoal/10 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border border-charcoal/10 rounded-3xl p-8 sm:p-12 shadow-md relative overflow-hidden">
+                <!-- Decorative background blob -->
+                <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-lilas/40 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="text-center space-y-4 mb-10">
+                    <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-amarelo text-charcoal">Laboratório Interativo</span>
+                    <h2 class="text-2xl sm:text-4xl font-display font-extrabold tracking-tight">
+                        Novelo de Ideias com Chibi 🧶
+                    </h2>
+                    <p class="text-sm sm:text-base text-charcoal/70 max-w-xl mx-auto">
+                        Escolha um tema e um formato para testar nossa experimentação criativa pré-definida e ver como conectamos conceitos.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Step 1: Theme selection -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-3">1. Escolha o Tema:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <button onclick="selectTheme('estudos')" id="theme-estudos" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📚 Estudos</button>
+                            <button onclick="selectTheme('comunidade')" id="theme-comunidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🤝 Comunidade</button>
+                            <button onclick="selectTheme('sustentabilidade')" id="theme-sustentabilidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🌱 Sustentabilidade</button>
+                            <button onclick="selectTheme('criatividade')" id="theme-criatividade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🎨 Criatividade</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Format selection -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-3">2. Escolha o Formato:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <button onclick="selectFormat('conteudo')" id="format-conteudo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📝 Conteúdo</button>
+                            <button onclick="selectFormat('jogo')" id="format-jogo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🎮 Jogo</button>
+                            <button onclick="selectFormat('experiencia')" id="format-experiencia" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">✨ Experiência</button>
+                            <button onclick="selectFormat('prototipo')" id="format-prototipo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">⚡ Protótipo</button>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div class="pt-4">
+                        <div class="bg-gradient-to-r from-lilas/30 to-verde/30 border border-charcoal/10 rounded-2xl p-6 text-center space-y-3">
+                            <div class="flex items-center justify-center gap-2 text-xs font-semibold text-charcoal/80">
+                                <i class="fa-solid fa-cat text-googleBlue"></i>
+                                <span id="chibi-dialogo">Chibi sugere: Puxe o fio e crie conexões incríveis!</span>
+                            </div>
+                            <div id="suggestion-result" class="text-sm sm:text-base font-display font-bold text-charcoal">
+                                Selecione um tema e um formato acima para gerar uma sugestão criativa.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trajetória e Reconhecimentos Section -->
+    <section id="trajetoria" class="py-20 bg-white border-t border-charcoal/10 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Marcos & Jornada</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
+                    Trajetória Verificada
+                </h2>
+                <p class="text-base sm:text-lg text-charcoal/70">
+                    Principais marcos da minha atuação multidisciplinar e embaixadovial, estruturados com transparência.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-charcoal/10 ml-4 sm:ml-32 space-y-12">
+                
+                <!-- Milestone 1 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <!-- Timeline dot -->
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleBlue border-4 border-white shadow-sm"></div>
+                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Atual</span>
+                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+                        <div class="flex items-center gap-2 text-xs font-semibold text-googleBlue mb-1">
+                            <i class="fa-solid fa-shield-cat"></i> Atuação Ativa
+                        </div>
+                        <h3 class="font-display font-bold text-xl mb-1">Embaixadora Estudantil do Google</h3>
+                        <p class="text-sm text-charcoal/70">
+                            Atuação no Grupo 3, promovendo a cultura de experimentação, uso de Inteligência Artificial e capacitação tecnológica para comunidades estudantis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleGreen border-4 border-white shadow-sm"></div>
+                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Inovação & IA</span>
+                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+                        <div class="flex items-center gap-2 text-xs font-semibold text-googleGreen mb-1">
+                            <i class="fa-solid fa-microchip"></i> Desenvolvimento & Protótipos
+                        </div>
+                        <h3 class="font-display font-bold text-xl mb-1">Criação de Soluções com Foco Social e Tecnológico</h3>
+                        <p class="text-sm text-charcoal/70">
+                            Desenvolvimento de projetos de destaque como DestinAI, RaízesGo, JúriLab e NortIA, combinando programação acessível e prototipação criativa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="relative pl-8 sm:pl-10 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleYellow border-4 border-white shadow-sm"></div>
+                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Comunidade</span>
+                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+                        <div class="flex items-center gap-2 text-xs font-semibold text-yellow-700 mb-1">
+                            <i class="fa-solid fa-comments"></i> Comunicação & Aprendizagem
+                        </div>
+                        <h3 class="font-display font-bold text-xl mb-1">Expansão de Conteúdos Digitais & Redes</h3>
+                        <p class="text-sm text-charcoal/70">
+                            Compartilhamento ativo de descobertas em plataformas como LinkedIn, TikTok e YouTube, traduzindo jornadas de tecnologia de forma leve e acolhedora.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato & Canais Section -->
+    <section id="contato" class="py-20 bg-cream border-t border-charcoal/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Conexões</span>
+                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
+                    Vamos puxar o fio de uma ideia?
+                </h2>
+                <p class="text-base sm:text-lg text-charcoal/70">
+                    Para trocar experiências, colaborar em projetos ou conversar sobre tecnologia, criatividade e comunidade.
+                </p>
+                <div class="pt-4">
+                    <a href="https://www.linkedin.com/in/beatrizkcs/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-googleBlue text-white font-semibold hover:bg-googleBlue/90 shadow-md hover:shadow-lg transition-all">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                        Conversar pelo LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Channels Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/beatrizkcs/" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-googleBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg mb-1">LinkedIn</h3>
+                        <p class="text-xs text-charcoal/60">Experiências, artigos e conexões profissionais.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-googleBlue">
+                        <span>Visitar perfil</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+
+                <!-- Instagram Card -->
+                <a href="https://www.instagram.com/1aspiraqualquer/" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg mb-1">Instagram</h3>
+                        <p class="text-xs text-charcoal/60">Bastidores, rotina criativa e pílulas de inspiração.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-pink-600">
+                        <span>Visitar perfil</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+
+                <!-- TikTok Card -->
+                <a href="https://www.tiktok.com/@1aspiraqualquer" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gray-100 text-charcoal flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg mb-1">TikTok</h3>
+                        <p class="text-xs text-charcoal/60">Vídeos curtos sobre tecnologia e aprendizado.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-charcoal">
+                        <span>Visitar perfil</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+
+                <!-- YouTube Card -->
+                <a href="https://www.youtube.com/@1aspiraqualquer" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-red-50 text-googleRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-lg mb-1">YouTube</h3>
+                        <p class="text-xs text-charcoal/60">Conteúdos aprofundados e descobertas.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-googleRed">
+                        <span>Visitar canal</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-charcoal/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <p class="font-display font-bold text-base">Beatriz Karoline</p>
+                <p class="text-xs text-charcoal/60 mt-1">Feito com curiosidade, criatividade e supervisão felina (Chibi 🐾).</p>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-charcoal/60">
+                <span>Portfólio Pessoal · Embaixadora Google</span>
+                <span class="w-1 h-1 rounded-full bg-charcoal/40"></span>
+                <a href="#inicio" class="hover:text-charcoal font-semibold">Voltar ao topo ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-charcoal/50 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div id="modal-content" class="bg-white border border-charcoal/10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative animate-float" style="animation-duration: 6s;">
+            <!-- Close button -->
+            <button onclick="closeModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-cream flex items-center justify-center text-charcoal hover:bg-lilas transition-all focus:outline-none focus:ring-2 focus:ring-googleBlue">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Modal Body injected via JS -->
+            <div id="modal-body" class="space-y-6">
+                <!-- Content inserted dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Database of Verified Projects from Portfolio, LinkedIn, and sources
+        const projectsData = [
+            {
+                id: 'destinai',
+                name: 'DestinAI',
+                category: 'IA',
+                shortDesc: 'Solução inteligente voltada para otimização de roteiros e experiências de destino.',
+                problema: 'Desafio na personalização eficiente de roteiros turísticos e experiências alinhadas ao perfil do usuário.',
+                proposta: 'Uso de inteligência artificial para recomendar rotas e pontos de interesse de forma automatizada e inteligente.',
+                contribuicao: 'Concepção da arquitetura da solução e estruturação de fluxos orientados por IA.',
+                estagio: 'Protótipo / Proposta em desenvolvimento',
+                reconhecimento: 'Mencionado no desafio de 2026',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'raizesgo',
+                name: 'RaízesGo',
+                category: 'Sustentabilidade',
+                shortDesc: 'Iniciativa voltada para valorização e preservação de raízes culturais e ambientais.',
+                problema: 'Falta de conexão e visibilidade digital para saberes tradicionais e iniciativas locais.',
+                proposta: 'Plataforma para destacar projetos de preservação e turismo sustentável.',
+                contribuicao: 'Pesquisa conceitual e curadoria de conteúdo.',
+                estagio: 'Proposta inicial validada',
+                reconhecimento: 'Destaque no portfólio anterior',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'frutos-do-cerrado',
+                name: 'Frutos do Cerrado',
+                category: 'Sustentabilidade',
+                shortDesc: 'Projeto de valorização da biodiversidade e aproveitamento sustentável do Cerrado.',
+                problema: 'Desperdício de frutos nativos e desconhecimento sobre seu potencial econômico e alimentar.',
+                proposta: 'Mapeamento e divulgação de práticas sustentáveis associadas ao bioma.',
+                contribuicao: 'Organização de dados e criação de materiais explicativos.',
+                estagio: 'Projeto concluído / Educativo',
+                reconhecimento: 'Iniciativa socioambiental',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'jurilab',
+                name: 'JúriLab',
+                category: 'Educação',
+                shortDesc: 'Protótipo educacional de prática forense impulsionado por inteligência artificial.',
+                problema: 'Dificuldade de estudantes de direito em simular práticas forenses complexas de forma acessível e interativa.',
+                proposta: 'Ambiente simulado com IA para treinar argumentação jurídica e análise de casos.',
+                contribuicao: 'Idealização pedagógica e estruturação de cenários de simulação.',
+                estagio: 'Protótipo educacional',
+                reconhecimento: 'Identificado no LinkedIn',
+                link: 'https://www.linkedin.com/in/beatrizkcs/'
+            },
+            {
+                id: 'nortia',
+                name: 'NortIA',
+                category: 'IA',
+                shortDesc: 'Inteligência de processos e identificação de oportunidades de automação.',
+                problema: 'Complexidade na identificação de gargalos operacionais e oportunidades de otimização em fluxos de trabalho.',
+                proposta: 'Ferramenta baseada em IA para análise e direcionamento de processos.',
+                contribuicao: 'Pesquisa de automação e modelagem de fluxos.',
+                estagio: 'Proposta conceitual',
+                reconhecimento: 'Identificado no LinkedIn',
+                link: 'https://www.linkedin.com/in/beatrizkcs/'
+            },
+            {
+                id: 'solitude',
+                name: 'Solitude',
+                category: 'Games',
+                shortDesc: 'Jogo interativo sobre reconstrução emocional após um término.',
+                problema: 'Carência de narrativas empáticas em jogos indie voltados para autoconhecimento e superação.',
+                proposta: 'Experiência narrativa jogável onde escolhas refletem jornadas de reconstrução pessoal.',
+                contribuicao: 'Concepção da narrativa e design de interações.',
+                estagio: 'Projeto jogável / Indie',
+                reconhecimento: 'Narrativa interativa',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'os-greens',
+                name: 'Os Greens e o Resgate do Sábado Animado',
+                category: 'Games',
+                shortDesc: 'Experiência lúdica voltada para engajamento em temáticas ambientais e comunitárias.',
+                problema: 'Necessidade de engajar o público jovem em pautas de sustentabilidade de maneira divertida.',
+                proposta: 'Aventura interativa baseada em missões ecológicas.',
+                contribuicao: 'Design de missões e estruturação da experiência.',
+                estagio: 'Projeto lançado',
+                reconhecimento: 'Finalista / Destaque verificado',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'reclapp',
+                name: 'ReClapp',
+                category: 'Comunidade',
+                shortDesc: 'Plataforma para incentivo à reciclagem e conexão com pontos de descarte.',
+                problema: 'Falta de facilidade para localizar pontos de reciclagem e bonificar ações sustentáveis.',
+                proposta: 'Aplicativo de conexão entre geradores de resíduos e catadores/pontos de coleta.',
+                contribuicao: 'Prototipagem de telas e fluxos de usuário.',
+                estagio: 'Protótipo funcional',
+                reconhecimento: 'Inovação comunitária',
+                link: 'https://soubeatrizkaroline.goskip.app/'
+            },
+            {
+                id: 'kará',
+                name: 'Kará',
+                category: 'Sustentabilidade',
+                shortDesc: 'Iniciativa voltada para redução de desperdício em feiras livres.',
+                problema: 'Desperdício expressivo de alimentos em feiras ao final de cada dia de comercialização.',
+                proposta: 'Sistema de redistribuição e conexão rápida entre feirantes e compradores.',
+                contribuicao: 'Pesquisa de campo e modelagem da proposta.',
+                estagio: 'Proposta validada',
+                reconhecimento: 'Identificado no LinkedIn',
+                link: 'https://www.linkedin.com/in/beatrizkcs/'
+            }
+        ];
+
+        let currentCategory = 'all';
+        let searchQuery = '';
+
+        // DOM elements
+        const projectsGrid = document.getElementById('projects-grid');
+        const projectSearch = document.getElementById('project-search');
+        const projectCount = document.getElementById('project-count');
+        const emptyState = document.getElementById('empty-state');
+        const categoryButtons = document.querySelectorAll('.category-btn');
+
+        // Render projects function
+        function renderProjects() {
+            const filtered = projectsData.filter(p => {
+                const matchesCategory = currentCategory === 'all' || p.category === currentCategory;
+                const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                      p.shortDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      p.category.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            projectCount.textContent = `Mostrando ${filtered.length} de ${projectsData.length} projetos`;
+
+            if (filtered.length === 0) {
+                projectsGrid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            projectsGrid.innerHTML = filtered.map(p => `
+                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-charcoal/10 text-charcoal">
+                                ${p.category}
+                            </span>
+                            <span class="text-xs text-charcoal/50 font-medium">${p.estagio}</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl mb-2 group-hover:text-googleBlue transition-colors">${p.name}</h3>
+                        <p class="text-sm text-charcoal/70 line-clamp-3 mb-4">${p.shortDesc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-charcoal/10 flex items-center justify-between">
+                        <button onclick="openModal('${p.id}')" class="text-xs font-bold text-charcoal hover:text-googleBlue transition-colors flex items-center gap-1.5">
+                            <span>Ver detalhes</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-xl bg-white border border-charcoal/10 flex items-center justify-center text-xs text-charcoal hover:bg-lilas transition-all" title="Acessar link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Category filter click
+        categoryButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryButtons.forEach(b => {
+                    b.classList.remove('bg-charcoal', 'text-cream');
+                    b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
+                });
+                btn.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
+                btn.classList.add('bg-charcoal', 'text-cream');
+
+                currentCategory = btn.getAttribute('data-category');
+                renderProjects();
+            });
+        });
+
+        // Search input event
+        projectSearch.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim();
+            renderProjects();
+        });
+
+        // Reset filters
+        function resetFilters() {
+            currentCategory = 'all';
+            searchQuery = '';
+            projectSearch.value = '';
+            categoryButtons.forEach(b => {
+                if(b.getAttribute('data-category') === 'all') {
+                    b.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
+                    b.classList.add('bg-charcoal', 'text-cream');
+                } else {
+                    b.classList.remove('bg-charcoal', 'text-cream');
+                    b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
+                }
+            });
+            renderProjects();
+        }
+
+        document.getElementById('clear-filters').addEventListener('click', resetFilters);
+
+        // Modal functions
+        let lastFocusedElement = null;
+
+        function openModal(id) {
+            lastFocusedElement = document.activeElement;
+            const project = projectsData.find(p => p.id === id);
+            if (!project) return;
+
+            const modalBody = document.getElementById('modal-body');
+            modalBody.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-lilas text-charcoal">${project.category}</span>
+                        <span class="text-xs text-charcoal/60 font-medium">${project.estagio}</span>
+                    </div>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl">${project.name}</h2>
+                    <p class="text-base text-charcoal/80">${project.shortDesc}</p>
+                    
+                    <div class="space-y-3 pt-2">
+                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-triangle-exclamation text-googleYellow mr-1"></i> Problema ou Oportunidade</h4>
+                            <p class="text-sm text-charcoal/80">${project.problema}</p>
+                        </div>
+                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-lightbulb text-googleBlue mr-1"></i> Proposta</h4>
+                            <p class="text-sm text-charcoal/80">${project.proposta}</p>
+                        </div>
+                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-user-check text-googleGreen mr-1"></i> Minha Contribuição</h4>
+                            <p class="text-sm text-charcoal/80">${project.contribuicao}</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center justify-between border-t border-charcoal/10">
+                        <span class="text-xs font-semibold text-charcoal/75">🏆 Reconhecimento: ${project.reconhecimento}</span>
+                        <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-charcoal text-cream text-xs font-semibold hover:bg-charcoal/90 transition-all flex items-center gap-2">
+                            <span>Acessar projeto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            if (lastFocusedElement) lastFocusedElement.focus();
+        }
+
+        // Close modal on Escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Close modal clicking outside
+        document.getElementById('project-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'project-modal') {
+                closeModal();
+            }
+        });
+
+        // Interactive "Novelo de Ideias" State
+        let selectedTheme = 'estudos';
+        let selectedFormat = 'conteudo';
+
+        const suggestionsDb = {
+            'estudos-conteudo': 'Criar um carrossel educativo no Instagram explicando como usar o Gemini Canvas para organizar resumos de estudo em minutos.',
+            'estudos-jogo': 'Desenvolver um quiz rápido em HTML/JS sobre conceitos tecnológicos fundamentais com feedback em tempo real.',
+            'estudos-experiencia': 'Montar um roteiro de estudos colaborativo integrando ferramentas de IA e anotações visuais.',
+            'estudos-prototipo': 'Desenvolver um protótipo de planner inteligente baseado em prompts estruturados.',
+            
+            'comunidade-conteudo': 'Produzir um vídeo curto no TikTok demonstrando o impacto de iniciativas estudantis e redes de apoio.',
+            'comunidade-jogo': 'Criar uma dinâmica interativa de perguntas e respostas para engajar estudantes em eventos.',
+            'comunidade-experiencia': 'Organizar uma oficina prática de ideação criativa utilizando técnicas de prototipagem ágil.',
+            'comunidade-prototipo': 'Desenvolver uma landing page simples para conectar novos integrantes a grupos de estudo.',
+            
+            'sustentabilidade-conteudo': 'Escrever um artigo no LinkedIn sobre tecnologia verde e soluções para redução de desperdício em feiras.',
+            'sustentabilidade-jogo': 'Criar um mini-game de tomada de decisão sobre reciclagem e consumo consciente.',
+            'sustentabilidade-experiencia': 'Simular fluxos de economia circular aplicados a projetos locais.',
+            'sustentabilidade-prototipo': 'Estruturar o escopo de um aplicativo para mapear pontos de coleta de materiais.',
+            
+            'criatividade-conteudo': 'Compartilhar os bastidores de design e identidade visual deste próprio portfólio felino.',
+            'criatividade-jogo': 'Criar um gerador aleatório de desafios criativos para testar em mentorias.',
+            'criatividade-experiencia': 'Desenvolver uma galeria visual interativa de experimentos visuais com SVG.',
+            'criatividade-prototipo': 'Prototipar componentes de interface inspirados no conceito de laboratório criativo.'
+        };
+
+        function selectTheme(theme) {
+            selectedTheme = theme;
+            document.querySelectorAll('.theme-option').forEach(btn => {
+                btn.classList.remove('bg-cream', 'border-googleBlue');
+                btn.classList.add('bg-white', 'border-charcoal/10');
+            });
+            const activeBtn = document.getElementById(`theme-${theme}`);
+            activeBtn.classList.remove('bg-white', 'border-charcoal/10');
+            activeBtn.classList.add('bg-cream', 'border-googleBlue');
+            updateSuggestion();
+        }
+
+        function selectFormat(format) {
+            selectedFormat = format;
+            document.querySelectorAll('.format-option').forEach(btn => {
+                btn.classList.remove('bg-cream', 'border-googleBlue');
+                btn.classList.add('bg-white', 'border-charcoal/10');
+            });
+            const activeBtn = document.getElementById(`format-${format}`);
+            activeBtn.classList.remove('bg-white', 'border-charcoal/10');
+            activeBtn.classList.add('bg-cream', 'border-googleBlue');
+            updateSuggestion();
+        }
+
+        function updateSuggestion() {
+            const key = `${selectedTheme}-${selectedFormat}`;
+            const resultEl = document.getElementById('suggestion-result');
+            const chibiDialog = document.getElementById('chibi-dialogo');
+            
+            if (suggestionsDb[key]) {
+                resultEl.textContent = suggestionsDb[key];
+                chibiDialog.textContent = 'Chibi sugere: Essa combinação tem potencial de gato curioso!';
+            } else {
+                resultEl.textContent = 'Explore a combinação entre tema e formato para gerar uma ideia inédita.';
+                chibiDialog.textContent = 'Chibi está pronto para conectar ideias!';
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initial render on load
+        window.onload = function() {
+            renderProjects();
+            selectTheme('estudos');
+            selectFormat('conteudo');
+        };
+    </script>
+</body>
+</html>
