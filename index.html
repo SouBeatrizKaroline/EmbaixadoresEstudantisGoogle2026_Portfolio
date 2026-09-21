@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatriz Karoline — Portfólio & Embaixadora Estudantil do Google</title>
+    <title>Beatriz Karoline — Portfólio 2026 | Tecnologia, IA e comunidade</title>
+    <meta name="description" content="Portfólio de Beatriz Karoline: projetos de tecnologia, inteligência artificial, educação, criatividade e impacto social, com destaque para sua atuação como Embaixadora Estudantil do Google em 2026.">
+    <meta name="author" content="Beatriz Karoline">
+    <meta name="theme-color" content="#FFF9F0">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Portfólio de Beatriz Karoline">
+    <meta property="og:title" content="Beatriz Karoline — Portfólio 2026">
+    <meta property="og:description" content="Tecnologia, IA, educação, criatividade e impacto social conectados por um fio de ideias.">
+    <meta property="og:url" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/">
+    <meta property="og:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png">
+    <meta property="og:image:alt" content="Beatriz Karoline — curiosidade de gato, vontade de transformar">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beatriz Karoline — Portfólio 2026">
+    <meta name="twitter:description" content="Tecnologia, IA, educação, criatividade e impacto social conectados por um fio de ideias.">
+    <meta name="twitter:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind configuration for custom colors & fonts -->
@@ -44,6 +63,24 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
         }
+        section[id] { scroll-margin-top: 6rem; }
+        :focus-visible {
+            outline: 3px solid #1A73E8;
+            outline-offset: 3px;
+        }
+        .skip-link {
+            position: fixed;
+            top: .75rem;
+            left: .75rem;
+            z-index: 100;
+            transform: translateY(-180%);
+            background: #202124;
+            color: #FFF9F0;
+            padding: .75rem 1rem;
+            border-radius: .75rem;
+            font-weight: 700;
+        }
+        .skip-link:focus { transform: translateY(0); }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Outfit', sans-serif;
         }
@@ -81,9 +118,22 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #d4c5ff;
         }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto !important; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        @media (max-width: 420px) {
+            .hero-actions > * { width: 100%; justify-content: center; }
+        }
     </style>
 </head>
 <body class="bg-cream text-charcoal antialiased selection:bg-lilas selection:text-charcoal">
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
 
     <!-- Header & Navigation -->
     <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-charcoal/10 transition-all duration-300">
@@ -91,8 +141,13 @@
             <a href="#inicio" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-googleBlue rounded-xl p-1">
                 <!-- Cat Icon Logo -->
                 <div class="w-10 h-10 rounded-2xl bg-lilas flex items-center justify-center text-charcoal shadow-sm group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5 5.5 3.5 7 3.5 8.5C3.5 10 4.5 11.5 6 12.5C5.5 14 5.5 16 6.5 18C7.5 20 10 21 12 21C14 21 16.5 20 17.5 18C18.5 16 18.5 14 18 12.5C19.5 11.5 20.5 10 20.5 8.5C20.5 7 19 5.5 17.5 5.5C16.5 3.5 14.5 2 12 2ZM9 9.5C9.5 9.5 10 10 10 10.5C10 11 9.5 11.5 9 11.5C8.5 11.5 8 11 8 10.5C8 10 8.5 9.5 9 9.5ZM15 9.5C15.5 9.5 16 10 16 10.5C16 11 15.5 11.5 15 11.5C14.5 11.5 14 11 14 10.5C14 10 14.5 9.5 15 9.5ZM12 16C10.5 16 9.5 15 9.5 14H14.5C14.5 15 13.5 16 12 16Z"/>
+                    <svg role="img" aria-label="Chibi, gato frajola" class="w-7 h-7" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 25 13 12l13 8a27 27 0 0 1 12 0l13-8-4 13a21 21 0 0 1 3 11c0 11-8 17-18 17S14 47 14 36a21 21 0 0 1 3-11Z" fill="#202124"/>
+                        <path d="M24 37c2-5 14-5 16 0 1 6-3 10-8 10s-9-4-8-10Z" fill="#FFF9F0"/>
+                        <ellipse cx="25" cy="31" rx="3" ry="4" fill="#34A853"/>
+                        <ellipse cx="39" cy="31" rx="3" ry="4" fill="#34A853"/>
+                        <path d="m32 38-3-2h6Z" fill="#EA4335"/>
+                        <path d="M23 40 9 38m14 6L10 47m31-7 14-2m-14 6 13 3" stroke="#202124" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <div>
@@ -104,7 +159,7 @@
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-1 bg-white/70 border border-charcoal/10 rounded-full px-4 py-1.5 shadow-sm">
+            <nav aria-label="Navegação principal" class="hidden md:flex items-center gap-1 bg-white/70 border border-charcoal/10 rounded-full px-2 lg:px-4 py-1.5 shadow-sm">
                 <a href="#inicio" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Início</a>
                 <a href="#sobre" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Sobre</a>
                 <a href="#google" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors text-googleBlue font-semibold">Google & Comunidade</a>
@@ -115,13 +170,13 @@
             </nav>
 
             <!-- Mobile menu button -->
-            <button id="mobile-menu-button" class="md:hidden p-2.5 rounded-xl bg-lilas/50 text-charcoal focus:outline-none focus:ring-2 focus:ring-googleBlue">
-                <i class="fa-solid fa-bars text-lg"></i>
+            <button id="mobile-menu-button" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2.5 rounded-xl bg-lilas/50 text-charcoal focus:outline-none focus:ring-2 focus:ring-googleBlue">
+                <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
             </button>
         </div>
 
         <!-- Mobile Nav Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-charcoal/10 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+        <nav id="mobile-menu" aria-label="Navegação móvel" class="hidden md:hidden bg-cream border-b border-charcoal/10 px-4 pt-2 pb-6 space-y-2 shadow-lg">
             <a href="#inicio" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Início</a>
             <a href="#sobre" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Sobre</a>
             <a href="#google" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60 text-googleBlue font-semibold">Google & Comunidade</a>
@@ -129,8 +184,10 @@
             <a href="#experiencia" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Novelo de Ideias</a>
             <a href="#trajetoria" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Trajetória</a>
             <a href="#contato" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Contato</a>
-        </div>
+        </nav>
     </header>
+
+    <main id="conteudo-principal">
 
     <!-- Hero Section -->
     <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
@@ -156,7 +213,7 @@
                         Conecto tecnologia, criatividade e pessoas para explorar ideias, compartilhar descobertas e construir projetos com propósito.
                     </p>
 
-                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <div class="hero-actions flex flex-wrap items-center gap-4 pt-2">
                         <a href="#projetos" class="px-7 py-4 rounded-2xl bg-charcoal text-cream font-semibold hover:bg-charcoal/90 shadow-md hover:shadow-lg transition-all flex items-center gap-3 group">
                             Explorar meus projetos
                             <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
@@ -196,7 +253,9 @@
                         <div class="relative bg-gradient-to-b from-amarelo/30 to-verde/30 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[260px] border border-charcoal/5">
                             
                             <!-- SVG Chibi & Setup -->
-                            <svg class="w-48 h-48 drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg role="img" aria-labelledby="chibi-title chibi-desc" class="w-48 h-48 drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title id="chibi-title">Chibi trabalhando em um notebook</title>
+                                <desc id="chibi-desc">Ilustração do gato frajola Chibi diante de um notebook, ao lado de um novelo vermelho.</desc>
                                 <!-- Laptop desk -->
                                 <rect x="30" y="130" width="140" height="12" rx="6" fill="#202124"/>
                                 <polygon points="50,142 150,142 165,160 35,160" fill="#EAE2FF"/>
@@ -452,12 +511,13 @@
                     <!-- Search Input -->
                     <div class="relative w-full md:w-96">
                         <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/40"></i>
-                        <input type="text" id="project-search" placeholder="Buscar por nome ou assunto..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-charcoal/15 text-sm focus:outline-none focus:ring-2 focus:ring-googleBlue transition-all">
+                        <label for="project-search" class="sr-only">Buscar projetos por nome ou assunto</label>
+                        <input type="search" id="project-search" autocomplete="off" placeholder="Buscar por nome ou assunto..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-charcoal/15 text-base focus:outline-none focus:ring-2 focus:ring-googleBlue transition-all">
                     </div>
                     
                     <!-- Results counter & Clear filter -->
                     <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
-                        <span id="project-count" class="text-xs font-semibold text-charcoal/60">Mostrando todos os projetos</span>
+                        <span id="project-count" aria-live="polite" class="text-sm font-semibold text-charcoal/70">Mostrando todos os projetos</span>
                         <button id="clear-filters" class="px-4 py-2 rounded-xl bg-white border border-charcoal/15 text-xs font-semibold hover:bg-lilas/40 transition-all text-charcoal">
                             Limpar filtros
                         </button>
@@ -465,21 +525,21 @@
                 </div>
 
                 <!-- Category Filters -->
-                <div id="category-filters" class="flex flex-wrap gap-2 pt-2 border-t border-charcoal/10">
-                    <button data-category="all" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-charcoal text-cream transition-all shadow-sm">Todos</button>
-                    <button data-category="IA" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">IA</button>
-                    <button data-category="Educação" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Educação</button>
-                    <button data-category="Comunidade" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Comunidade</button>
-                    <button data-category="Saúde" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Saúde</button>
-                    <button data-category="Sustentabilidade" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Sustentabilidade</button>
-                    <button data-category="Games" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Games</button>
-                    <button data-category="Design e Produto" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Design e Produto</button>
-                    <button data-category="Impacto Social" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Impacto Social</button>
+                <div id="category-filters" role="group" aria-label="Filtrar projetos por categoria" class="flex flex-wrap gap-2 pt-2 border-t border-charcoal/10">
+                    <button type="button" data-category="all" aria-pressed="true" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-charcoal text-cream transition-all shadow-sm">Todos</button>
+                    <button type="button" data-category="IA" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">IA</button>
+                    <button type="button" data-category="Educação" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Educação</button>
+                    <button type="button" data-category="Comunidade" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Comunidade</button>
+                    <button type="button" data-category="Saúde" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Saúde</button>
+                    <button type="button" data-category="Sustentabilidade" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Sustentabilidade</button>
+                    <button type="button" data-category="Games" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Games</button>
+                    <button type="button" data-category="Design e Produto" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Design e Produto</button>
+                    <button type="button" data-category="Impacto Social" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Impacto Social</button>
                 </div>
             </div>
 
             <!-- Projects Grid -->
-            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="projects-grid" aria-live="polite" aria-busy="false" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 <!-- Project cards will be dynamically rendered via JS -->
             </div>
 
@@ -516,15 +576,15 @@
                         Novelo de Ideias com Chibi 🧶
                     </h2>
                     <p class="text-sm sm:text-base text-charcoal/70 max-w-xl mx-auto">
-                        Escolha um tema e um formato para testar nossa experimentação criativa pré-definida e ver como conectamos conceitos.
+                        Escolha um tema e um formato para combinar possibilidades e descobrir uma sugestão criativa.
                     </p>
                 </div>
 
                 <div class="space-y-6">
                     <!-- Step 1: Theme selection -->
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-3">1. Escolha o Tema:</label>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <p id="theme-label" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-3">1. Escolha o tema</p>
+                        <div role="group" aria-labelledby="theme-label" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                             <button onclick="selectTheme('estudos')" id="theme-estudos" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📚 Estudos</button>
                             <button onclick="selectTheme('comunidade')" id="theme-comunidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🤝 Comunidade</button>
                             <button onclick="selectTheme('sustentabilidade')" id="theme-sustentabilidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🌱 Sustentabilidade</button>
@@ -534,8 +594,8 @@
 
                     <!-- Step 2: Format selection -->
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-3">2. Escolha o Formato:</label>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <p id="format-label" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-3">2. Escolha o formato</p>
+                        <div role="group" aria-labelledby="format-label" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                             <button onclick="selectFormat('conteudo')" id="format-conteudo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📝 Conteúdo</button>
                             <button onclick="selectFormat('jogo')" id="format-jogo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🎮 Jogo</button>
                             <button onclick="selectFormat('experiencia')" id="format-experiencia" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">✨ Experiência</button>
@@ -550,7 +610,7 @@
                                 <i class="fa-solid fa-cat text-googleBlue"></i>
                                 <span id="chibi-dialogo">Chibi sugere: Puxe o fio e crie conexões incríveis!</span>
                             </div>
-                            <div id="suggestion-result" class="text-sm sm:text-base font-display font-bold text-charcoal">
+                            <div id="suggestion-result" aria-live="polite" class="text-sm sm:text-base font-display font-bold text-charcoal">
                                 Selecione um tema e um formato acima para gerar uma sugestão criativa.
                             </div>
                         </div>
@@ -570,7 +630,7 @@
                     Trajetória Verificada
                 </h2>
                 <p class="text-base sm:text-lg text-charcoal/70">
-                    Principais marcos da minha atuação multidisciplinar e embaixadovial, estruturados com transparência.
+                    Principais marcos da minha atuação multidisciplinar e como embaixadora, apresentados com transparência.
                 </p>
             </div>
 
@@ -588,7 +648,7 @@
                         </div>
                         <h3 class="font-display font-bold text-xl mb-1">Embaixadora Estudantil do Google</h3>
                         <p class="text-sm text-charcoal/70">
-                            Atuação no Grupo 3, promovendo a cultura de experimentação, uso de Inteligência Artificial e capacitação tecnológica para comunidades estudantis.
+                            Participação no Grupo 3, explorando inteligência artificial, criatividade e aprendizagem em comunidade.
                         </p>
                     </div>
                 </div>
@@ -712,6 +772,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-charcoal/10 py-12">
@@ -721,7 +782,7 @@
                 <p class="text-xs text-charcoal/60 mt-1">Feito com curiosidade, criatividade e supervisão felina (Chibi 🐾).</p>
             </div>
             <div class="flex items-center gap-4 text-xs text-charcoal/60">
-                <span>Portfólio Pessoal · Embaixadora Google</span>
+                <span>Portfólio pessoal · Embaixadora Estudantil do Google</span>
                 <span class="w-1 h-1 rounded-full bg-charcoal/40"></span>
                 <a href="#inicio" class="hover:text-charcoal font-semibold">Voltar ao topo ↑</a>
             </div>
@@ -729,10 +790,10 @@
     </footer>
 
     <!-- Project Detail Modal -->
-    <div id="project-modal" class="fixed inset-0 z-50 bg-charcoal/50 backdrop-blur-sm hidden items-center justify-center p-4">
-        <div id="modal-content" class="bg-white border border-charcoal/10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative animate-float" style="animation-duration: 6s;">
+    <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" class="fixed inset-0 z-50 bg-charcoal/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div id="modal-content" tabindex="-1" class="bg-white border border-charcoal/10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
             <!-- Close button -->
-            <button onclick="closeModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-cream flex items-center justify-center text-charcoal hover:bg-lilas transition-all focus:outline-none focus:ring-2 focus:ring-googleBlue">
+            <button type="button" onclick="closeModal()" aria-label="Fechar detalhes do projeto" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-cream flex items-center justify-center text-charcoal hover:bg-lilas transition-all focus:outline-none focus:ring-2 focus:ring-googleBlue">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
 
@@ -899,11 +960,11 @@
                         <p class="text-sm text-charcoal/70 line-clamp-3 mb-4">${p.shortDesc}</p>
                     </div>
                     <div class="pt-4 border-t border-charcoal/10 flex items-center justify-between">
-                        <button onclick="openModal('${p.id}')" class="text-xs font-bold text-charcoal hover:text-googleBlue transition-colors flex items-center gap-1.5">
+                        <button type="button" onclick="openModal('${p.id}')" aria-label="Ver detalhes de ${p.name}" class="text-sm font-bold text-charcoal hover:text-googleBlue transition-colors flex items-center gap-1.5">
                             <span>Ver detalhes</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
-                        <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-xl bg-white border border-charcoal/10 flex items-center justify-center text-xs text-charcoal hover:bg-lilas transition-all" title="Acessar link">
+                        <a href="${p.link}" target="_blank" rel="noopener noreferrer" aria-label="Acessar página de ${p.name} em nova aba" class="w-11 h-11 rounded-xl bg-white border border-charcoal/10 flex items-center justify-center text-xs text-charcoal hover:bg-lilas transition-all" title="Acessar página do projeto">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -915,11 +976,13 @@
         categoryButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 categoryButtons.forEach(b => {
+                    b.setAttribute('aria-pressed', 'false');
                     b.classList.remove('bg-charcoal', 'text-cream');
                     b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
                 });
                 btn.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
                 btn.classList.add('bg-charcoal', 'text-cream');
+                btn.setAttribute('aria-pressed', 'true');
 
                 currentCategory = btn.getAttribute('data-category');
                 renderProjects();
@@ -939,9 +1002,11 @@
             projectSearch.value = '';
             categoryButtons.forEach(b => {
                 if(b.getAttribute('data-category') === 'all') {
+                    b.setAttribute('aria-pressed', 'true');
                     b.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
                     b.classList.add('bg-charcoal', 'text-cream');
                 } else {
+                    b.setAttribute('aria-pressed', 'false');
                     b.classList.remove('bg-charcoal', 'text-cream');
                     b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
                 }
@@ -966,8 +1031,8 @@
                         <span class="px-3 py-1 rounded-full text-xs font-semibold bg-lilas text-charcoal">${project.category}</span>
                         <span class="text-xs text-charcoal/60 font-medium">${project.estagio}</span>
                     </div>
-                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl">${project.name}</h2>
-                    <p class="text-base text-charcoal/80">${project.shortDesc}</p>
+                        <h2 id="modal-title" class="font-display font-extrabold text-2xl sm:text-3xl pr-12">${project.name}</h2>
+                        <p id="modal-description" class="text-base text-charcoal/80">${project.shortDesc}</p>
                     
                     <div class="space-y-3 pt-2">
                         <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
@@ -998,6 +1063,7 @@
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             document.body.style.overflow = 'hidden';
+            document.getElementById('modal-content').focus();
         }
 
         function closeModal() {
@@ -1010,8 +1076,17 @@
 
         // Close modal on Escape key
         window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
+            const modal = document.getElementById('project-modal');
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
                 closeModal();
+            }
+            if (e.key === 'Tab' && !modal.classList.contains('hidden')) {
+                const focusable = [...modal.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')];
+                if (!focusable.length) return;
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
             }
         });
 
@@ -1051,24 +1126,28 @@
         function selectTheme(theme) {
             selectedTheme = theme;
             document.querySelectorAll('.theme-option').forEach(btn => {
+                btn.setAttribute('aria-pressed', 'false');
                 btn.classList.remove('bg-cream', 'border-googleBlue');
                 btn.classList.add('bg-white', 'border-charcoal/10');
             });
             const activeBtn = document.getElementById(`theme-${theme}`);
             activeBtn.classList.remove('bg-white', 'border-charcoal/10');
             activeBtn.classList.add('bg-cream', 'border-googleBlue');
+            activeBtn.setAttribute('aria-pressed', 'true');
             updateSuggestion();
         }
 
         function selectFormat(format) {
             selectedFormat = format;
             document.querySelectorAll('.format-option').forEach(btn => {
+                btn.setAttribute('aria-pressed', 'false');
                 btn.classList.remove('bg-cream', 'border-googleBlue');
                 btn.classList.add('bg-white', 'border-charcoal/10');
             });
             const activeBtn = document.getElementById(`format-${format}`);
             activeBtn.classList.remove('bg-white', 'border-charcoal/10');
             activeBtn.classList.add('bg-cream', 'border-googleBlue');
+            activeBtn.setAttribute('aria-pressed', 'true');
             updateSuggestion();
         }
 
@@ -1092,7 +1171,18 @@
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+            mobileMenuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+            mobileMenuButton.querySelector('i').className = `fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'} text-lg`;
         });
+
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            mobileMenuButton.setAttribute('aria-label', 'Abrir menu');
+            mobileMenuButton.querySelector('i').className = 'fa-solid fa-bars text-lg';
+        }));
 
         // Initial render on load
         window.onload = function() {

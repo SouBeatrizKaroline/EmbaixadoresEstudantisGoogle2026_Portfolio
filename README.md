@@ -88,11 +88,19 @@ A proposta visual valoriza:
 
 ## 🛠️ Da ideia ao portfólio
 
-O projeto nasce de uma proposta de criação no **Gemini Canvas**, com evolução e organização do código neste repositório.
+O projeto nasceu de uma proposta de criação no **Gemini Canvas** e evoluiu para uma página estática, responsiva e acessível, organizada neste repositório.
 
-O processo envolve reunir referências da minha trajetória, estruturar o conteúdo, desenvolver a identidade visual e revisar a experiência.
+### Executar localmente
 
-Tecnologias, instruções de execução e detalhes de publicação serão documentados conforme a implementação disponível aqui.
+Não há etapa de compilação nem dependências para instalar: basta abrir `index.html` no navegador. Para reproduzir o comportamento da publicação com mais fidelidade, também é possível servir a pasta com qualquer servidor HTTP local.
+
+### Estrutura
+
+- `index.html`: conteúdo, estilos e interações do portfólio.
+- `favicon.svg`: ícone felino exibido na aba do navegador.
+- `og-preview.png`: imagem usada na prévia de compartilhamento em redes sociais.
+
+O site inclui busca e filtros de projetos, modal acessível, navegação responsiva, foco visível, suporte a teclado e preferência por movimento reduzido.
 
 ## 🌱 Sempre em construção
 
