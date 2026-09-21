@@ -1,1195 +1,1394 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatriz Karoline — Portfólio 2026 | Tecnologia, IA e comunidade</title>
-    <meta name="description" content="Portfólio de Beatriz Karoline: projetos de tecnologia, inteligência artificial, educação, criatividade e impacto social, com destaque para sua atuação como Embaixadora Estudantil do Google em 2026.">
-    <meta name="author" content="Beatriz Karoline">
-    <meta name="theme-color" content="#FFF9F0">
-    <meta name="color-scheme" content="light">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Portfólio de Beatriz Karoline">
-    <meta property="og:title" content="Beatriz Karoline — Portfólio 2026">
-    <meta property="og:description" content="Tecnologia, IA, educação, criatividade e impacto social conectados por um fio de ideias.">
-    <meta property="og:url" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/">
-    <meta property="og:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png">
-    <meta property="og:image:alt" content="Beatriz Karoline — curiosidade de gato, vontade de transformar">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Beatriz Karoline — Portfólio 2026">
-    <meta name="twitter:description" content="Tecnologia, IA, educação, criatividade e impacto social conectados por um fio de ideias.">
-    <meta name="twitter:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind configuration for custom colors & fonts -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: '#FFF9F0',
-                        charcoal: '#202124',
-                        lilas: '#EAE2FF',
-                        verde: '#DFF3E5',
-                        amarelo: '#FFF0B8',
-                        laranja: '#FFECE2',
-                        googleBlue: '#4285F4',
-                        googleRed: '#EA4335',
-                        googleYellow: '#FBBC05',
-                        googleGreen: '#34A853'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Google Fonts: Inter & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #FFF9F0;
-            color: #202124;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
-        section[id] { scroll-margin-top: 6rem; }
-        :focus-visible {
-            outline: 3px solid #1A73E8;
-            outline-offset: 3px;
-        }
-        .skip-link {
-            position: fixed;
-            top: .75rem;
-            left: .75rem;
-            z-index: 100;
-            transform: translateY(-180%);
-            background: #202124;
-            color: #FFF9F0;
-            padding: .75rem 1rem;
-            border-radius: .75rem;
-            font-weight: 700;
-        }
-        .skip-link:focus { transform: translateY(0); }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-        }
-        .cat-paw-bg {
-            background-image: radial-gradient(#202124 0.75px, transparent 0.75px);
-            background-size: 24px 24px;
-            background-opacity: 0.03;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-        }
-        .animate-float {
-            animation: float 4s ease-in-out infinite;
-        }
-        @keyframes wiggle {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(-3deg); }
-            75% { transform: rotate(3deg); }
-        }
-        .animate-wiggle:hover {
-            animation: wiggle 0.4s ease-in-out infinite;
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FFF9F0;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #EAE2FF;
-            border-radius: 9999px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #d4c5ff;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto !important; }
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                scroll-behavior: auto !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-        @media (max-width: 420px) {
-            .hero-actions > * { width: 100%; justify-content: center; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatriz Karoline | Embaixadora Estudantil Google 2026</title>
+  <meta name="description" content="Portfólio de missões, projetos e liderança de Beatriz Karoline - Embaixadora Estudantil Google 2026 e Desenvolvedora Full Stack." />
+  
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon & Canonical -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="canonical" href="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/" />
+
+  <!-- Metatags Open Graph & Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Beatriz Karoline | Embaixadora Estudantil Google 2026" />
+  <meta property="og:description" content="Portfólio interativo de missões práticas com Google Gemini, projetos de inovação social, GovTech e liderança estudantil de Beatriz Karoline (UFPE)." />
+  <meta property="og:url" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/" />
+  <meta property="og:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png" />
+  <meta property="og:site_name" content="Portfólio Beatriz Karoline" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Beatriz Karoline | Embaixadora Estudantil Google 2026" />
+  <meta name="twitter:description" content="Missões práticas com Gemini, projetos em GovTech, sustentabilidade e liderança estudantil na UFPE." />
+  <meta name="twitter:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png" />
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Beatriz Karoline Cordeiro da Silva",
+    "alternateName": "Beatriz Karoline",
+    "jobTitle": "Embaixadora Estudantil Google 2026 & Desenvolvedora Full Stack",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Federal de Pernambuco (UFPE)"
+    },
+    "url": "https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/",
+    "sameAs": [
+      "https://github.com/SouBeatrizKaroline",
+      "https://www.linkedin.com/in/beatrizkcs/",
+      "https://www.youtube.com/@1aspiraqualquer",
+      "https://instagram.com/soubeatrizkaroline",
+      "https://tiktok.com/@soubeatrizkaroline",
+      "https://lablab.ai/ai-hackathons/doge-ai-hackathon/hackagirls"
+    ],
+    "knowsAbout": [
+      "Google Gemini",
+      "Inteligência Artificial",
+      "Full Stack Web Development",
+      "GovTech",
+      "Acessibilidade Digital",
+      "Sustentabilidade e Clima"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #090c15;
+      --bg-surface: #101626;
+      --bg-card: rgba(17, 24, 40, 0.75);
+      --bg-card-hover: rgba(26, 36, 58, 0.9);
+      --border-color: rgba(255, 255, 255, 0.08);
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+      
+      --google-blue: #4285F4;
+      --google-red: #EA4335;
+      --google-yellow: #FBBC05;
+      --google-green: #34A853;
+      
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --accent-gold: #f59e0b;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --shadow-glow: 0 0 25px rgba(139, 92, 246, 0.25);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Halo Cósmico de Fundo */
+    .cosmic-glow-1 {
+      position: fixed;
+      top: -150px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(66, 133, 244, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+      filter: blur(80px);
+      z-index: -1;
+    }
+    .cosmic-glow-2 {
+      position: fixed;
+      bottom: -150px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(52, 168, 83, 0.1) 0%, rgba(251, 188, 5, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Barra Superior */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(9, 12, 21, 0.85);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, #1e1b4b, #312e81);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .brand-text p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .tag-badge {
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background: rgba(66, 133, 244, 0.12);
+      border: 1px solid rgba(66, 133, 244, 0.25);
+      color: #93c5fd;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--google-green);
+      box-shadow: 0 0 8px var(--google-green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 64px 0 40px;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .badge-program {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      background: linear-gradient(90deg, rgba(66, 133, 244, 0.12), rgba(168, 85, 247, 0.15));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c4b5fd;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.9rem;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .hero-title .grad-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #c084fc 50%, #f472b6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      max-width: 580px;
+    }
+
+    .quote-box {
+      padding: 14px 18px;
+      border-left: 3px solid var(--accent-purple);
+      background: rgba(139, 92, 246, 0.05);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-style: italic;
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--google-blue), #6366f1);
+      color: white;
+      box-shadow: 0 4px 18px rgba(66, 133, 244, 0.3);
+      border: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(66, 133, 244, 0.45);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Cartão do Perfil / Guardiã */
+    .profile-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(12px);
+      position: relative;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .mascot-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #090a10, #1e1b4b);
+      border: 2px solid rgba(139, 92, 246, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+    }
+
+    .mascot-meta h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .mascot-meta p {
+      font-size: 0.8rem;
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .stat-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+    }
+    .stat-num {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .stat-desc {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .tracker-box {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-color);
+    }
+    .tracker-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      margin-bottom: 6px;
+      color: var(--text-muted);
+    }
+    .tracker-bar {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+    .tracker-prog {
+      height: 100%;
+      width: 55%;
+      background: linear-gradient(90deg, var(--google-blue), var(--google-green), var(--google-yellow), var(--accent-purple));
+      border-radius: var(--radius-full);
+    }
+
+    /* Seções */
+    .section-wrap {
+      margin-top: 80px;
+    }
+
+    .sec-head {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .sec-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .sec-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .sec-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* Grid de Missões */
+    .missions-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .card-mission {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      backdrop-filter: blur(8px);
+    }
+    .card-mission:hover {
+      border-color: rgba(139, 92, 246, 0.4);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .mission-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .badge-wk {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: rgba(66, 133, 244, 0.15);
+      color: #93c5fd;
+    }
+
+    .badge-stat {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #4ade80;
+    }
+
+    .card-mission h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .card-mission p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+
+    .deliv-list {
+      list-style: none;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .deliv-list li {
+      font-size: 0.8rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .deliv-list a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .deliv-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* 7 Caminhos */
+    .caminhos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .caminho-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      transition: var(--transition);
+    }
+    .caminho-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .caminho-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .caminho-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .caminho-card p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Projetos */
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 24px;
+    }
+    .proj-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+    .proj-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(66, 133, 244, 0.4);
+      box-shadow: var(--shadow-card);
+    }
+    .proj-tags-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .tag-sm {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+    }
+    .tag-highlight {
+      background: rgba(52, 168, 83, 0.15);
+      color: #86efac;
+      border: 1px solid rgba(52, 168, 83, 0.3);
+    }
+    .tag-blue {
+      background: rgba(66, 133, 244, 0.15);
+      color: #93c5fd;
+      border: 1px solid rgba(66, 133, 244, 0.3);
+    }
+
+    .proj-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .proj-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .chip {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .proj-foot {
+      padding-top: 14px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+    }
+
+    /* Bloco de Contato */
+    .contact-box {
+      margin-top: 80px;
+      background: linear-gradient(135deg, rgba(30, 27, 75, 0.6), rgba(15, 23, 42, 0.85));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .contact-box h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .contact-box p {
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto 24px;
+      font-size: 0.95rem;
+    }
+    .social-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-soc {
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-soc:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* Rodapé */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 32px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-subtle);
+      margin-top: 60px;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    /* Acessibilidade: Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 16px;
+      background: var(--google-blue);
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      z-index: 9999;
+      text-decoration: none;
+      transition: top 0.2s ease;
+      box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+    }
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    /* Acessibilidade: Foco visível */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--google-blue);
+      outline-offset: 3px;
+    }
+
+    /* Redução de Movimento */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Menu Mobile Toggle */
+    .menu-toggle {
+      display: none;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 1.2rem;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    .menu-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Filtro de Projetos */
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      transform: translateY(-2px);
+    }
+    .filter-btn.active {
+      background: rgba(66, 133, 244, 0.2);
+      border-color: var(--google-blue);
+      color: #93c5fd;
+      box-shadow: 0 0 14px rgba(66, 133, 244, 0.3);
+    }
+
+    /* Links de Ação dos Cards */
+    .proj-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .proj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #93c5fd;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .proj-link:hover {
+      color: #bfdbfe;
+      text-decoration: underline;
+    }
+
+    /* Botão Flutuante Voltar ao Topo */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      background: rgba(17, 24, 40, 0.85);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 99;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .back-to-top:hover {
+      background: var(--accent-purple);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+    }
+
+    /* Notificação Toast Copiado */
+    .copy-toast {
+      display: none;
+      font-size: 0.8rem;
+      color: #86efac;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .copy-toast.show {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 36px 0;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: rgba(9, 12, 21, 0.96);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid var(--border-color);
+        gap: 16px;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .tag-badge {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body class="bg-cream text-charcoal antialiased selection:bg-lilas selection:text-charcoal">
-    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="cosmic-glow-1"></div>
+  <div class="cosmic-glow-2"></div>
 
-    <!-- Header & Navigation -->
-    <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-charcoal/10 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#inicio" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-googleBlue rounded-xl p-1">
-                <!-- Cat Icon Logo -->
-                <div class="w-10 h-10 rounded-2xl bg-lilas flex items-center justify-center text-charcoal shadow-sm group-hover:scale-105 transition-transform">
-                    <svg role="img" aria-label="Chibi, gato frajola" class="w-7 h-7" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 25 13 12l13 8a27 27 0 0 1 12 0l13-8-4 13a21 21 0 0 1 3 11c0 11-8 17-18 17S14 47 14 36a21 21 0 0 1 3-11Z" fill="#202124"/>
-                        <path d="M24 37c2-5 14-5 16 0 1 6-3 10-8 10s-9-4-8-10Z" fill="#FFF9F0"/>
-                        <ellipse cx="25" cy="31" rx="3" ry="4" fill="#34A853"/>
-                        <ellipse cx="39" cy="31" rx="3" ry="4" fill="#34A853"/>
-                        <path d="m32 38-3-2h6Z" fill="#EA4335"/>
-                        <path d="M23 40 9 38m14 6L10 47m31-7 14-2m-14 6 13 3" stroke="#202124" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <div>
-                    <span class="font-display font-bold text-lg tracking-tight block">Beatriz Karoline</span>
-                    <span class="text-xs text-charcoal/60 font-medium flex items-center gap-1">
-                        <span class="inline-block w-2 h-2 rounded-full bg-googleBlue"></span> Embaixadora Estudantil Google
-                    </span>
-                </div>
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav aria-label="Navegação principal" class="hidden md:flex items-center gap-1 bg-white/70 border border-charcoal/10 rounded-full px-2 lg:px-4 py-1.5 shadow-sm">
-                <a href="#inicio" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Início</a>
-                <a href="#sobre" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Sobre</a>
-                <a href="#google" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors text-googleBlue font-semibold">Google & Comunidade</a>
-                <a href="#projetos" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Projetos</a>
-                <a href="#experiencia" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Novelo de Ideias</a>
-                <a href="#trajetoria" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Trajetória</a>
-                <a href="#contato" class="px-4 py-2 rounded-full text-sm font-medium hover:bg-lilas/60 transition-colors">Contato</a>
-            </nav>
-
-            <!-- Mobile menu button -->
-            <button id="mobile-menu-button" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2.5 rounded-xl bg-lilas/50 text-charcoal focus:outline-none focus:ring-2 focus:ring-googleBlue">
-                <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
-            </button>
+  <!-- Header -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-avatar">🐾</div>
+        <div class="brand-text">
+          <h1>Beatriz Karoline</h1>
+          <p>Embaixadora Estudantil Google 2026</p>
         </div>
+      </a>
 
-        <!-- Mobile Nav Menu -->
-        <nav id="mobile-menu" aria-label="Navegação móvel" class="hidden md:hidden bg-cream border-b border-charcoal/10 px-4 pt-2 pb-6 space-y-2 shadow-lg">
-            <a href="#inicio" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Início</a>
-            <a href="#sobre" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Sobre</a>
-            <a href="#google" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60 text-googleBlue font-semibold">Google & Comunidade</a>
-            <a href="#projetos" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Projetos</a>
-            <a href="#experiencia" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Novelo de Ideias</a>
-            <a href="#trajetoria" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Trajetória</a>
-            <a href="#contato" class="block px-4 py-2.5 rounded-xl text-base font-medium hover:bg-lilas/60">Contato</a>
-        </nav>
-    </header>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        ☰
+      </button>
 
-    <main id="conteudo-principal">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#jornada">Missões & Gemini</a></li>
+        <li><a href="#caminhos">7 Caminhos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
-        <!-- Decorative blobs -->
-        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-lilas/30 via-verde/20 to-amarelo/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left text column -->
-                <div class="lg:col-span-7 space-y-6 text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-verde border border-verde/60 text-charcoal text-xs font-semibold tracking-wide shadow-sm">
-                        <span class="w-2 h-2 rounded-full bg-googleGreen animate-pulse"></span>
-                        Embaixadora Estudantil do Google · Grupo 3
-                    </div>
-
-                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight leading-[1.1]">
-                        Curiosidade de gato. <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-googleBlue via-purple-600 to-googleRed">Vontade de transformar.</span>
-                    </h1>
-
-                    <p class="text-lg sm:text-xl text-charcoal/80 max-w-2xl font-normal leading-relaxed">
-                        Conecto tecnologia, criatividade e pessoas para explorar ideias, compartilhar descobertas e construir projetos com propósito.
-                    </p>
-
-                    <div class="hero-actions flex flex-wrap items-center gap-4 pt-2">
-                        <a href="#projetos" class="px-7 py-4 rounded-2xl bg-charcoal text-cream font-semibold hover:bg-charcoal/90 shadow-md hover:shadow-lg transition-all flex items-center gap-3 group">
-                            Explorar meus projetos
-                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                        <a href="#google" class="px-7 py-4 rounded-2xl bg-lilas/80 text-charcoal font-semibold hover:bg-lilas transition-all shadow-sm border border-lilas/50 flex items-center gap-2">
-                            Conhecer minha atuação
-                        </a>
-                    </div>
-
-                    <!-- Quick highlights pills -->
-                    <div class="pt-6 border-t border-charcoal/10 flex flex-wrap items-center gap-6 text-sm text-charcoal/70">
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-paw text-googleBlue"></i>
-                            <span>IA & Experimentação</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-comments text-googleGreen"></i>
-                            <span>Comunidade & Impacto</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-googleYellow"></i>
-                            <span>Aprendizagem Criativa</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Illustration / Chibi Banner -->
-                <div class="lg:col-span-5 relative flex justify-center">
-                    <div class="relative w-full max-w-md bg-white border border-charcoal/10 rounded-3xl p-6 sm:p-8 shadow-xl cat-paw-bg animate-float">
-                        
-                        <!-- Chibi Speech Bubble -->
-                        <div class="absolute -top-6 -right-4 bg-lilas text-charcoal text-xs font-semibold px-4 py-2 rounded-2xl shadow-md border border-charcoal/10 flex items-center gap-2 animate-bounce">
-                            <span>🐱 Oi! Eu sou o Chibi. Bora seguir esse fio?</span>
-                        </div>
-
-                        <!-- Creative Workspace Illustration with SVG -->
-                        <div class="relative bg-gradient-to-b from-amarelo/30 to-verde/30 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[260px] border border-charcoal/5">
-                            
-                            <!-- SVG Chibi & Setup -->
-                        <svg role="img" aria-labelledby="chibi-title chibi-desc" class="w-48 h-48 drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <title id="chibi-title">Chibi trabalhando em um notebook</title>
-                                <desc id="chibi-desc">Ilustração do gato frajola Chibi diante de um notebook, ao lado de um novelo vermelho.</desc>
-                                <!-- Laptop desk -->
-                                <rect x="30" y="130" width="140" height="12" rx="6" fill="#202124"/>
-                                <polygon points="50,142 150,142 165,160 35,160" fill="#EAE2FF"/>
-                                <!-- Laptop Screen -->
-                                <rect x="70" y="75" width="60" height="45" rx="4" fill="#202124"/>
-                                <rect x="73" y="78" width="54" height="39" rx="2" fill="#FFF9F0"/>
-                                <!-- Google-like colors on screen -->
-                                <circle cx="85" cy="90" r="4" fill="#4285F4"/>
-                                <line x1="95" y1="90" x2="115" y2="90" stroke="#34A853" stroke-width="3" stroke-linecap="round"/>
-                                <line x1="85" y1="102" x2="110" y2="102" stroke="#EA4335" stroke-width="3" stroke-linecap="round"/>
-                                
-                                <!-- Chibi Cat Head (Black & White tuxedo, green eyes) -->
-                                <path d="M100 35 C115 35 125 45 125 60 C125 72 115 80 100 80 C85 80 75 72 75 60 C75 45 85 35 100 35 Z" fill="#202124"/>
-                                <!-- Ears -->
-                                <polygon points="78,42 65,22 88,36" fill="#202124"/>
-                                <polygon points="122,42 135,22 112,36" fill="#202124"/>
-                                <polygon points="79,40 70,26 86,36" fill="#FFECE2"/>
-                                <polygon points="121,40 130,26 114,36" fill="#FFECE2"/>
-                                <!-- White patch on face -->
-                                <path d="M88 60 Q100 50 112 60 Q115 75 100 78 Q85 75 88 60 Z" fill="#FFF9F0"/>
-                                <!-- Green Eyes -->
-                                <ellipse cx="91" cy="58" rx="3.5" ry="5" fill="#34A853"/>
-                                <ellipse cx="109" cy="58" rx="3.5" ry="5" fill="#34A853"/>
-                                <circle cx="92" cy="57" r="1.5" fill="#FFF"/>
-                                <circle cx="110" cy="57" r="1.5" fill="#FFF"/>
-                                <!-- Nose & Whiskers -->
-                                <polygon points="100,64 97,61 103,61" fill="#EA4335"/>
-                                <line x1="85" y1="67" x2="70" y2="65" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
-                                <line x1="85" y1="71" x2="68" y2="72" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
-                                <line x1="115" y1="67" x2="130" y2="65" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
-                                <line x1="115" y1="71" x2="132" y2="72" stroke="#202124" stroke-width="1.5" stroke-linecap="round"/>
-                                
-                                <!-- Floating yarn ball -->
-                                <circle cx="160" cy="115" r="14" fill="#EA4335"/>
-                                <path d="M152 108 Q165 100 168 118" stroke="#FFF" stroke-width="2" fill="none"/>
-                                <path d="M148 115 Q155 125 168 112" stroke="#FFF" stroke-width="2" fill="none"/>
-                            </svg>
-
-                            <div class="text-center mt-2">
-                                <span class="text-xs font-semibold px-3 py-1 bg-white rounded-full shadow-sm border border-charcoal/10 text-charcoal">
-                                    Mascote do Grupo 3 · Embaixadores Google
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Card footer info -->
-                        <div class="mt-6 flex items-center justify-between text-xs text-charcoal/70">
-                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-googleBlue"></i> Criatividade & Comunidade</span>
-                            <span class="font-semibold text-charcoal">Beatriz Karoline</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre - Minhas Sete Vidas Criativas -->
-    <section id="sobre" class="py-20 bg-white border-y border-charcoal/10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Sobre Mim</span>
-                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
-                    Minhas sete vidas criativas
-                </h2>
-                <p class="text-base sm:text-lg text-charcoal/70">
-                    Assim como diz a lenda dos gatos, minha trajetória se desdobra em múltiplos universos interconectados. Aqui estão as dimensões que movem meu dia a dia:
-                </p>
-            </div>
-
-            <!-- 7 Dimensions Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Dimension 1 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-googleBlue/10 text-googleBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">1. Tecnologia & Prototipação</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Transformar ideias em protótipos funcionais, explorando ferramentas modernas, desenvolvimento e resolução de problemas práticos.
-                    </p>
-                </div>
-
-                <!-- Dimension 2 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">2. IA & Experimentação</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Uso ativo de Inteligência Artificial — como Gemini e Gemini Canvas — para acelerar fluxos de criação, estudo e inovação.
-                    </p>
-                </div>
-
-                <!-- Dimension 3 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-googleRed/10 text-googleRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">3. Comunicação & Conteúdo</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Produção de conteúdos digitais, vídeos e artigos que traduzem conceitos complexos em experiências acessíveis e cativantes.
-                    </p>
-                </div>
-
-                <!-- Dimension 4 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-googleGreen/10 text-googleGreen flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">4. Educação & Compartilhamento</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Aproximar pessoas do conhecimento através de oficinas, mentorias e iniciativas colaborativas em redes de aprendizagem.
-                    </p>
-                </div>
-
-                <!-- Dimension 5 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-googleYellow/20 text-yellow-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-palette"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">5. Design & Experiências</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Atenção rigorosa à estética, usabilidade, identidade visual e harmonia editorial em cada projeto entregue.
-                    </p>
-                </div>
-
-                <!-- Dimension 6 -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-gamepad"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-2">6. Games & Narrativas</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Exploração de jogos educacionais e narrativas interativas como ferramentas potentes de engajamento e reflexão.
-                    </p>
-                </div>
-
-                <!-- Dimension 7 (Spans 2 on lg or centered) -->
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 group lg:col-span-3 md:col-span-2">
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-users-viewfinder"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-display font-bold text-xl mb-1">7. Comunidade & Impacto Social</h3>
-                                <p class="text-sm text-charcoal/70">
-                                    Conectar pessoas, fortalecer redes estudantis e criar soluções voltadas para sustentabilidade, inclusão e bem-estar.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 py-2.5 rounded-2xl bg-lilas text-charcoal text-xs font-semibold shrink-0">
-                            🐾 A base de tudo o que faço
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Google & Comunidade Section -->
-    <section id="google" class="py-20 bg-cream relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-googleBlue/10 text-googleBlue">Embaixadora Google</span>
-                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
-                    Aprender, experimentar e compartilhar.
-                </h2>
-                <p class="text-base sm:text-lg text-charcoal/70">
-                    Como Embaixadora Estudantil do Google e integrante do Grupo 3, atuo aproximando comunidades acadêmicas de ferramentas inovadoras, inteligência artificial e aprendizagem criativa.
-                </p>
-            </div>
-
-            <!-- 3 Pillars Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                
-                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-googleBlue text-white flex items-center justify-center text-lg mb-6 shadow-sm">
-                        <i class="fa-solid fa-compass"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-3">1. Explorar ferramentas</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Mergulho constante em novas tecnologias, experimentando o potencial criativo de plataformas Google e fluxos com IA.
-                    </p>
-                </div>
-
-                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-googleRed text-white flex items-center justify-center text-lg mb-6 shadow-sm">
-                        <i class="fa-solid fa-feather-pointed"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-3">2. Transformar em conteúdo</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Produção de materiais educativos e demonstrações práticas mostrando como o Gemini e o Gemini Canvas facilitam a ideação.
-                    </p>
-                </div>
-
-                <div class="bg-white border border-charcoal/10 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-googleGreen text-white flex items-center justify-center text-lg mb-6 shadow-sm">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                    </div>
-                    <h3 class="font-display font-bold text-xl mb-3">3. Compartilhar e conectar</h3>
-                    <p class="text-sm text-charcoal/70 leading-relaxed">
-                        Articulação com estudantes, trocas de experiências no Grupo 3 e fomento a comunidades focadas em impacto e tecnologia.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- Spotlight Banner -->
-            <div class="bg-gradient-to-r from-lilas/40 via-verde/40 to-amarelo/40 border border-charcoal/10 rounded-3xl p-8 sm:p-12 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
-                <div class="space-y-4 max-w-2xl">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-charcoal text-xs font-semibold shadow-sm">
-                        <i class="fa-solid fa-shield-cat text-googleBlue"></i> Grupo 3 · Embaixadores Estudantis
-                    </div>
-                    <h3 class="font-display font-bold text-2xl sm:text-3xl">Curiosidade guiada por propósito</h3>
-                    <p class="text-sm sm:text-base text-charcoal/80 leading-relaxed">
-                        O apoio do programa me permite conectar estudantes a oportunidades de aprendizado e prototipação ágil. Cada encontro é uma chance de inspirar novas trajetórias na tecnologia.
-                    </p>
-                </div>
-                <div class="shrink-0 flex gap-3">
-                    <div class="w-16 h-16 rounded-2xl bg-googleBlue/20 flex items-center justify-center text-googleBlue text-2xl shadow-sm">
-                        <i class="fa-brands fa-google"></i>
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-googleGreen/20 flex items-center justify-center text-googleGreen text-2xl shadow-sm">
-                        <i class="fa-solid fa-paw"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Catálogo de Projetos Section -->
-    <section id="projetos" class="py-20 bg-white border-t border-charcoal/10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
-                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-verde text-charcoal">Portfólio de Inovação</span>
-                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
-                    Projetos & Soluções
-                </h2>
-                <p class="text-base sm:text-lg text-charcoal/70">
-                    Explore uma seleção de trabalhos multidisciplinares que unem inteligência artificial, impacto social, educação e criatividade.
-                </p>
-            </div>
-
-            <!-- Search and Filters Bar -->
-            <div class="bg-cream border border-charcoal/10 rounded-3xl p-4 sm:p-6 mb-10 shadow-sm space-y-4">
-                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
-                    <!-- Search Input -->
-                    <div class="relative w-full md:w-96">
-                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/40"></i>
-                        <label for="project-search" class="sr-only">Buscar projetos por nome ou assunto</label>
-                        <input type="search" id="project-search" autocomplete="off" placeholder="Buscar por nome ou assunto..." class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white border border-charcoal/15 text-base focus:outline-none focus:ring-2 focus:ring-googleBlue transition-all">
-                    </div>
-                    
-                    <!-- Results counter & Clear filter -->
-                    <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
-                        <span id="project-count" aria-live="polite" class="text-sm font-semibold text-charcoal/70">Mostrando todos os projetos</span>
-                        <button id="clear-filters" class="px-4 py-2 rounded-xl bg-white border border-charcoal/15 text-xs font-semibold hover:bg-lilas/40 transition-all text-charcoal">
-                            Limpar filtros
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Category Filters -->
-                <div id="category-filters" role="group" aria-label="Filtrar projetos por categoria" class="flex flex-wrap gap-2 pt-2 border-t border-charcoal/10">
-                    <button type="button" data-category="all" aria-pressed="true" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-charcoal text-cream transition-all shadow-sm">Todos</button>
-                    <button type="button" data-category="IA" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">IA</button>
-                    <button type="button" data-category="Educação" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Educação</button>
-                    <button type="button" data-category="Comunidade" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Comunidade</button>
-                    <button type="button" data-category="Saúde" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Saúde</button>
-                    <button type="button" data-category="Sustentabilidade" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Sustentabilidade</button>
-                    <button type="button" data-category="Games" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Games</button>
-                    <button type="button" data-category="Design e Produto" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Design e Produto</button>
-                    <button type="button" data-category="Impacto Social" aria-pressed="false" class="category-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-charcoal/15 hover:bg-lilas/40 transition-all text-charcoal">Impacto Social</button>
-                </div>
-            </div>
-
-            <!-- Projects Grid -->
-            <div id="projects-grid" aria-live="polite" aria-busy="false" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                <!-- Project cards will be dynamically rendered via JS -->
-            </div>
-
-            <!-- Empty State (hidden by default) -->
-            <div id="empty-state" class="hidden text-center py-16 space-y-4">
-                <div class="w-16 h-16 rounded-3xl bg-lilas mx-auto flex items-center justify-center text-2xl text-charcoal">
-                    <i class="fa-solid fa-cat"></i>
-                </div>
-                <h3 class="font-display font-bold text-xl">Nenhum projeto encontrado</h3>
-                <p class="text-sm text-charcoal/60 max-w-sm mx-auto">Tente buscar por outro termo ou limpar os filtros para ver todos os trabalhos.</p>
-                <button onclick="resetFilters()" class="px-5 py-2.5 rounded-xl bg-charcoal text-cream text-xs font-semibold shadow-sm">Ver todos os projetos</button>
-            </div>
-
-            <!-- View More / Toggle Catalog if needed -->
-            <div class="mt-12 text-center">
-                <p class="text-xs text-charcoal/60">
-                    <i class="fa-solid fa-circle-info text-googleBlue mr-1"></i> Seleção combinada entre fontes oficiais e repositórios verificados (LinkedIn e portfólio anterior).
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Microexperiência Interativa: Novelo de Ideias -->
-    <section id="experiencia" class="py-20 bg-cream border-t border-charcoal/10 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white border border-charcoal/10 rounded-3xl p-8 sm:p-12 shadow-md relative overflow-hidden">
-                <!-- Decorative background blob -->
-                <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-lilas/40 rounded-full blur-2xl pointer-events-none"></div>
-
-                <div class="text-center space-y-4 mb-10">
-                    <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-amarelo text-charcoal">Laboratório Interativo</span>
-                    <h2 class="text-2xl sm:text-4xl font-display font-extrabold tracking-tight">
-                        Novelo de Ideias com Chibi 🧶
-                    </h2>
-                    <p class="text-sm sm:text-base text-charcoal/70 max-w-xl mx-auto">
-                        Escolha um tema e um formato para combinar possibilidades e descobrir uma sugestão criativa.
-                    </p>
-                </div>
-
-                <div class="space-y-6">
-                    <!-- Step 1: Theme selection -->
-                    <div>
-                        <p id="theme-label" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-3">1. Escolha o tema</p>
-                        <div role="group" aria-labelledby="theme-label" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <button onclick="selectTheme('estudos')" id="theme-estudos" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📚 Estudos</button>
-                            <button onclick="selectTheme('comunidade')" id="theme-comunidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🤝 Comunidade</button>
-                            <button onclick="selectTheme('sustentabilidade')" id="theme-sustentabilidade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🌱 Sustentabilidade</button>
-                            <button onclick="selectTheme('criatividade')" id="theme-criatividade" class="theme-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🎨 Criatividade</button>
-                        </div>
-                    </div>
-
-                    <!-- Step 2: Format selection -->
-                    <div>
-                        <p id="format-label" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-3">2. Escolha o formato</p>
-                        <div role="group" aria-labelledby="format-label" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <button onclick="selectFormat('conteudo')" id="format-conteudo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all bg-cream">📝 Conteúdo</button>
-                            <button onclick="selectFormat('jogo')" id="format-jogo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">🎮 Jogo</button>
-                            <button onclick="selectFormat('experiencia')" id="format-experiencia" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">✨ Experiência</button>
-                            <button onclick="selectFormat('prototipo')" id="format-prototipo" class="format-option p-3 rounded-2xl border-2 border-charcoal/10 text-xs font-semibold text-center hover:bg-lilas/40 transition-all">⚡ Protótipo</button>
-                        </div>
-                    </div>
-
-                    <!-- Result Box -->
-                    <div class="pt-4">
-                        <div class="bg-gradient-to-r from-lilas/30 to-verde/30 border border-charcoal/10 rounded-2xl p-6 text-center space-y-3">
-                            <div class="flex items-center justify-center gap-2 text-xs font-semibold text-charcoal/80">
-                                <i class="fa-solid fa-cat text-googleBlue"></i>
-                                <span id="chibi-dialogo">Chibi sugere: Puxe o fio e crie conexões incríveis!</span>
-                            </div>
-                            <div id="suggestion-result" aria-live="polite" class="text-sm sm:text-base font-display font-bold text-charcoal">
-                                Selecione um tema e um formato acima para gerar uma sugestão criativa.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Trajetória e Reconhecimentos Section -->
-    <section id="trajetoria" class="py-20 bg-white border-t border-charcoal/10 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Marcos & Jornada</span>
-                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
-                    Trajetória Verificada
-                </h2>
-                <p class="text-base sm:text-lg text-charcoal/70">
-                    Principais marcos da minha atuação multidisciplinar e como embaixadora, apresentados com transparência.
-                </p>
-            </div>
-
-            <!-- Timeline -->
-            <div class="relative border-l-2 border-charcoal/10 ml-4 sm:ml-32 space-y-12">
-                
-                <!-- Milestone 1 -->
-                <div class="relative pl-8 sm:pl-10 group">
-                    <!-- Timeline dot -->
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleBlue border-4 border-white shadow-sm"></div>
-                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Atual</span>
-                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                        <div class="flex items-center gap-2 text-xs font-semibold text-googleBlue mb-1">
-                            <i class="fa-solid fa-shield-cat"></i> Atuação Ativa
-                        </div>
-                        <h3 class="font-display font-bold text-xl mb-1">Embaixadora Estudantil do Google</h3>
-                        <p class="text-sm text-charcoal/70">
-                            Participação no Grupo 3, explorando inteligência artificial, criatividade e aprendizagem em comunidade.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Milestone 2 -->
-                <div class="relative pl-8 sm:pl-10 group">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleGreen border-4 border-white shadow-sm"></div>
-                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Inovação & IA</span>
-                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                        <div class="flex items-center gap-2 text-xs font-semibold text-googleGreen mb-1">
-                            <i class="fa-solid fa-microchip"></i> Desenvolvimento & Protótipos
-                        </div>
-                        <h3 class="font-display font-bold text-xl mb-1">Criação de Soluções com Foco Social e Tecnológico</h3>
-                        <p class="text-sm text-charcoal/70">
-                            Desenvolvimento de projetos de destaque como DestinAI, RaízesGo, JúriLab e NortIA, combinando programação acessível e prototipação criativa.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Milestone 3 -->
-                <div class="relative pl-8 sm:pl-10 group">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-googleYellow border-4 border-white shadow-sm"></div>
-                    <span class="absolute -left-28 sm:-left-32 top-1 text-xs font-bold text-charcoal/60 hidden sm:block">Comunidade</span>
-                    <div class="bg-cream border border-charcoal/10 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
-                        <div class="flex items-center gap-2 text-xs font-semibold text-yellow-700 mb-1">
-                            <i class="fa-solid fa-comments"></i> Comunicação & Aprendizagem
-                        </div>
-                        <h3 class="font-display font-bold text-xl mb-1">Expansão de Conteúdos Digitais & Redes</h3>
-                        <p class="text-sm text-charcoal/70">
-                            Compartilhamento ativo de descobertas em plataformas como LinkedIn, TikTok e YouTube, traduzindo jornadas de tecnologia de forma leve e acolhedora.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato & Canais Section -->
-    <section id="contato" class="py-20 bg-cream border-t border-charcoal/10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-lilas text-charcoal">Conexões</span>
-                <h2 class="text-3xl sm:text-5xl font-display font-extrabold tracking-tight">
-                    Vamos puxar o fio de uma ideia?
-                </h2>
-                <p class="text-base sm:text-lg text-charcoal/70">
-                    Para trocar experiências, colaborar em projetos ou conversar sobre tecnologia, criatividade e comunidade.
-                </p>
-                <div class="pt-4">
-                    <a href="https://www.linkedin.com/in/beatrizkcs/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-googleBlue text-white font-semibold hover:bg-googleBlue/90 shadow-md hover:shadow-lg transition-all">
-                        <i class="fa-brands fa-linkedin text-xl"></i>
-                        Conversar pelo LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- Social Channels Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                
-                <!-- LinkedIn Card -->
-                <a href="https://www.linkedin.com/in/beatrizkcs/" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-googleBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                        <h3 class="font-display font-bold text-lg mb-1">LinkedIn</h3>
-                        <p class="text-xs text-charcoal/60">Experiências, artigos e conexões profissionais.</p>
-                    </div>
-                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-googleBlue">
-                        <span>Visitar perfil</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                </a>
-
-                <!-- Instagram Card -->
-                <a href="https://www.instagram.com/1aspiraqualquer/" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <h3 class="font-display font-bold text-lg mb-1">Instagram</h3>
-                        <p class="text-xs text-charcoal/60">Bastidores, rotina criativa e pílulas de inspiração.</p>
-                    </div>
-                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-pink-600">
-                        <span>Visitar perfil</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                </a>
-
-                <!-- TikTok Card -->
-                <a href="https://www.tiktok.com/@1aspiraqualquer" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-gray-100 text-charcoal flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                        <h3 class="font-display font-bold text-lg mb-1">TikTok</h3>
-                        <p class="text-xs text-charcoal/60">Vídeos curtos sobre tecnologia e aprendizado.</p>
-                    </div>
-                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-charcoal">
-                        <span>Visitar perfil</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                </a>
-
-                <!-- YouTube Card -->
-                <a href="https://www.youtube.com/@1aspiraqualquer" target="_blank" rel="noopener noreferrer" class="bg-white border border-charcoal/10 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-red-50 text-googleRed flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                        <h3 class="font-display font-bold text-lg mb-1">YouTube</h3>
-                        <p class="text-xs text-charcoal/60">Conteúdos aprofundados e descobertas.</p>
-                    </div>
-                    <div class="pt-4 mt-4 border-t border-charcoal/10 flex items-center justify-between text-xs font-semibold text-googleRed">
-                        <span>Visitar canal</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-charcoal/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div>
-                <p class="font-display font-bold text-base">Beatriz Karoline</p>
-                <p class="text-xs text-charcoal/60 mt-1">Feito com curiosidade, criatividade e supervisão felina (Chibi 🐾).</p>
-            </div>
-            <div class="flex items-center gap-4 text-xs text-charcoal/60">
-                <span>Portfólio pessoal · Embaixadora Estudantil do Google</span>
-                <span class="w-1 h-1 rounded-full bg-charcoal/40"></span>
-                <a href="#inicio" class="hover:text-charcoal font-semibold">Voltar ao topo ↑</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Project Detail Modal -->
-    <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" class="fixed inset-0 z-50 bg-charcoal/60 backdrop-blur-sm hidden items-center justify-center p-4">
-        <div id="modal-content" tabindex="-1" class="bg-white border border-charcoal/10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
-            <!-- Close button -->
-            <button type="button" onclick="closeModal()" aria-label="Fechar detalhes do projeto" class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-cream flex items-center justify-center text-charcoal hover:bg-lilas transition-all focus:outline-none focus:ring-2 focus:ring-googleBlue">
-                <i class="fa-solid fa-xmark text-lg"></i>
-            </button>
-
-            <!-- Modal Body injected via JS -->
-            <div id="modal-body" class="space-y-6">
-                <!-- Content inserted dynamically -->
-            </div>
-        </div>
+      <div class="tag-badge">
+        <span class="status-dot"></span>
+        <span>#EmbaixadoresEstudantisGoogle</span>
+      </div>
     </div>
+  </header>
 
-    <!-- JavaScript Application Logic -->
-    <script>
-        // Database of Verified Projects from Portfolio, LinkedIn, and sources
-        const projectsData = [
-            {
-                id: 'destinai',
-                name: 'DestinAI',
-                category: 'IA',
-                shortDesc: 'Solução inteligente voltada para otimização de roteiros e experiências de destino.',
-                problema: 'Desafio na personalização eficiente de roteiros turísticos e experiências alinhadas ao perfil do usuário.',
-                proposta: 'Uso de inteligência artificial para recomendar rotas e pontos de interesse de forma automatizada e inteligente.',
-                contribuicao: 'Concepção da arquitetura da solução e estruturação de fluxos orientados por IA.',
-                estagio: 'Protótipo / Proposta em desenvolvimento',
-                reconhecimento: 'Mencionado no desafio de 2026',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'raizesgo',
-                name: 'RaízesGo',
-                category: 'Sustentabilidade',
-                shortDesc: 'Iniciativa voltada para valorização e preservação de raízes culturais e ambientais.',
-                problema: 'Falta de conexão e visibilidade digital para saberes tradicionais e iniciativas locais.',
-                proposta: 'Plataforma para destacar projetos de preservação e turismo sustentável.',
-                contribuicao: 'Pesquisa conceitual e curadoria de conteúdo.',
-                estagio: 'Proposta inicial validada',
-                reconhecimento: 'Destaque no portfólio anterior',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'frutos-do-cerrado',
-                name: 'Frutos do Cerrado',
-                category: 'Sustentabilidade',
-                shortDesc: 'Projeto de valorização da biodiversidade e aproveitamento sustentável do Cerrado.',
-                problema: 'Desperdício de frutos nativos e desconhecimento sobre seu potencial econômico e alimentar.',
-                proposta: 'Mapeamento e divulgação de práticas sustentáveis associadas ao bioma.',
-                contribuicao: 'Organização de dados e criação de materiais explicativos.',
-                estagio: 'Projeto concluído / Educativo',
-                reconhecimento: 'Iniciativa socioambiental',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'jurilab',
-                name: 'JúriLab',
-                category: 'Educação',
-                shortDesc: 'Protótipo educacional de prática forense impulsionado por inteligência artificial.',
-                problema: 'Dificuldade de estudantes de direito em simular práticas forenses complexas de forma acessível e interativa.',
-                proposta: 'Ambiente simulado com IA para treinar argumentação jurídica e análise de casos.',
-                contribuicao: 'Idealização pedagógica e estruturação de cenários de simulação.',
-                estagio: 'Protótipo educacional',
-                reconhecimento: 'Identificado no LinkedIn',
-                link: 'https://www.linkedin.com/in/beatrizkcs/'
-            },
-            {
-                id: 'nortia',
-                name: 'NortIA',
-                category: 'IA',
-                shortDesc: 'Inteligência de processos e identificação de oportunidades de automação.',
-                problema: 'Complexidade na identificação de gargalos operacionais e oportunidades de otimização em fluxos de trabalho.',
-                proposta: 'Ferramenta baseada em IA para análise e direcionamento de processos.',
-                contribuicao: 'Pesquisa de automação e modelagem de fluxos.',
-                estagio: 'Proposta conceitual',
-                reconhecimento: 'Identificado no LinkedIn',
-                link: 'https://www.linkedin.com/in/beatrizkcs/'
-            },
-            {
-                id: 'solitude',
-                name: 'Solitude',
-                category: 'Games',
-                shortDesc: 'Jogo interativo sobre reconstrução emocional após um término.',
-                problema: 'Carência de narrativas empáticas em jogos indie voltados para autoconhecimento e superação.',
-                proposta: 'Experiência narrativa jogável onde escolhas refletem jornadas de reconstrução pessoal.',
-                contribuicao: 'Concepção da narrativa e design de interações.',
-                estagio: 'Projeto jogável / Indie',
-                reconhecimento: 'Narrativa interativa',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'os-greens',
-                name: 'Os Greens e o Resgate do Sábado Animado',
-                category: 'Games',
-                shortDesc: 'Experiência lúdica voltada para engajamento em temáticas ambientais e comunitárias.',
-                problema: 'Necessidade de engajar o público jovem em pautas de sustentabilidade de maneira divertida.',
-                proposta: 'Aventura interativa baseada em missões ecológicas.',
-                contribuicao: 'Design de missões e estruturação da experiência.',
-                estagio: 'Projeto lançado',
-                reconhecimento: 'Finalista / Destaque verificado',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'reclapp',
-                name: 'ReClapp',
-                category: 'Comunidade',
-                shortDesc: 'Plataforma para incentivo à reciclagem e conexão com pontos de descarte.',
-                problema: 'Falta de facilidade para localizar pontos de reciclagem e bonificar ações sustentáveis.',
-                proposta: 'Aplicativo de conexão entre geradores de resíduos e catadores/pontos de coleta.',
-                contribuicao: 'Prototipagem de telas e fluxos de usuário.',
-                estagio: 'Protótipo funcional',
-                reconhecimento: 'Inovação comunitária',
-                link: 'https://soubeatrizkaroline.goskip.app/'
-            },
-            {
-                id: 'kará',
-                name: 'Kará',
-                category: 'Sustentabilidade',
-                shortDesc: 'Iniciativa voltada para redução de desperdício em feiras livres.',
-                problema: 'Desperdício expressivo de alimentos em feiras ao final de cada dia de comercialização.',
-                proposta: 'Sistema de redistribuição e conexão rápida entre feirantes e compradores.',
-                contribuicao: 'Pesquisa de campo e modelagem da proposta.',
-                estagio: 'Proposta validada',
-                reconhecimento: 'Identificado no LinkedIn',
-                link: 'https://www.linkedin.com/in/beatrizkcs/'
-            }
-        ];
+  <main id="main-content" class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div>
+        <div class="badge-program">✨ Comunidade Oficial Google Gemini 2026</div>
+        <h2 class="hero-title">
+          Tecnologia que <span class="grad-text">cuida, inclui</span> e transforma realidades.
+        </h2>
+        <p class="hero-desc">
+          Olá! Sou Beatriz Karoline, estudante na UFPE, desenvolvedora Full Stack e Embaixadora Estudantil Google 2026. Este espaço reúne minhas missões práticas com Google Gemini, projetos de inovação social e iniciativas em inteligência artificial.
+        </p>
 
-        let currentCategory = 'all';
-        let searchQuery = '';
+        <div class="quote-box">
+          “Eu não quero apenas aprender tecnologia. Quero conectar tecnologia, saúde, educação, inteligência artificial e inclusão para criar coisas que façam diferença real na vida das pessoas.”
+        </div>
 
-        // DOM elements
-        const projectsGrid = document.getElementById('projects-grid');
-        const projectSearch = document.getElementById('project-search');
-        const projectCount = document.getElementById('project-count');
-        const emptyState = document.getElementById('empty-state');
-        const categoryButtons = document.querySelectorAll('.category-btn');
+        <div class="hero-actions">
+          <a href="#jornada" class="btn btn-primary">Ver Missões do Programa 🚀</a>
+          <a href="#projetos" class="btn btn-outline">Explorar Projetos</a>
+        </div>
+      </div>
 
-        // Render projects function
-        function renderProjects() {
-            const filtered = projectsData.filter(p => {
-                const matchesCategory = currentCategory === 'all' || p.category === currentCategory;
-                const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                      p.shortDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                                      p.category.toLowerCase().includes(searchQuery.toLowerCase());
-                return matchesCategory && matchesSearch;
-            });
+      <!-- Card da Guardiã -->
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="mascot-icon">🐈‍⬛</div>
+          <div class="mascot-meta">
+            <h2>A Guardiã das 7 Vidas</h2>
+            <p>Identidade Autoral • Novelo de Ideias</p>
+          </div>
+        </div>
+        <p style="font-size: 0.86rem; color: var(--text-muted);">
+          Gata observadora, vigilante e curiosa que tece conexões entre código, saúde digital e inclusão para desenrolar soluções de problemas complexos.
+        </p>
 
-            projectCount.textContent = `Mostrando ${filtered.length} de ${projectsData.length} projetos`;
+        <div class="stat-list">
+          <div class="stat-box">
+            <div class="stat-num">Ativa 🟢</div>
+            <div class="stat-desc">Status no Programa</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">UFPE</div>
+            <div class="stat-desc">Recife • Pernambuco</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">Google AI Pro</div>
+            <div class="stat-desc">Gemini & Canvas Explorer</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">Hackathons</div>
+            <div class="stat-desc">NASA Space Apps & CAR</div>
+          </div>
+        </div>
 
-            if (filtered.length === 0) {
-                projectsGrid.innerHTML = '';
-                emptyState.classList.remove('hidden');
-                return;
-            }
+        <div class="tracker-box">
+          <div class="tracker-top">
+            <span>Jornada de Embaixadora</span>
+            <span style="color: #93c5fd; font-weight: 700;">Semana 3+ Concluída</span>
+          </div>
+          <div class="tracker-bar">
+            <div class="tracker-prog"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            emptyState.classList.add('hidden');
-            projectsGrid.innerHTML = filtered.map(p => `
-                <div class="bg-cream border border-charcoal/10 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white border border-charcoal/10 text-charcoal">
-                                ${p.category}
-                            </span>
-                            <span class="text-xs text-charcoal/50 font-medium">${p.estagio}</span>
-                        </div>
-                        <h3 class="font-display font-bold text-xl mb-2 group-hover:text-googleBlue transition-colors">${p.name}</h3>
-                        <p class="text-sm text-charcoal/70 line-clamp-3 mb-4">${p.shortDesc}</p>
-                    </div>
-                    <div class="pt-4 border-t border-charcoal/10 flex items-center justify-between">
-                        <button type="button" onclick="openModal('${p.id}')" aria-label="Ver detalhes de ${p.name}" class="text-sm font-bold text-charcoal hover:text-googleBlue transition-colors flex items-center gap-1.5">
-                            <span>Ver detalhes</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                        <a href="${p.link}" target="_blank" rel="noopener noreferrer" aria-label="Acessar página de ${p.name} em nova aba" class="w-11 h-11 rounded-xl bg-white border border-charcoal/10 flex items-center justify-center text-xs text-charcoal hover:bg-lilas transition-all" title="Acessar página do projeto">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            `).join('');
-        }
+    <!-- Missões & Jornada -->
+    <section id="jornada" class="section-wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Gemini em Missão</span>
+        <h2 class="sec-title">Jornada de Aprendizado & Conquistas</h2>
+        <p class="sec-sub">
+          Registro contínuo das missões, desafios semanais e capacitações no Programa de Embaixadores Estudantis do Google 2026.
+        </p>
+      </div>
 
-        // Category filter click
-        categoryButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                categoryButtons.forEach(b => {
-                    b.setAttribute('aria-pressed', 'false');
-                    b.classList.remove('bg-charcoal', 'text-cream');
-                    b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
-                });
-                btn.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
-                btn.classList.add('bg-charcoal', 'text-cream');
-                btn.setAttribute('aria-pressed', 'true');
+      <div class="missions-layout">
+        <!-- Semana 1 -->
+        <article class="card-mission">
+          <div class="mission-badge-row">
+            <span class="badge-wk">Semana 1</span>
+            <span class="badge-stat">✓ Concluído</span>
+          </div>
+          <h3>Onboarding & Boas-Vindas</h3>
+          <p>
+            Entrada no programa, ativação do ecossistema Google AI Pro e integração com as diretrizes e comunidade nacional de embaixadores.
+          </p>
+          <ul class="deliv-list">
+            <li><span>🏅</span> Selo: Explorador</li>
+            <li><span>⚡</span> Acesso à comunidade e canais oficiais</li>
+          </ul>
+        </article>
 
-                currentCategory = btn.getAttribute('data-category');
-                renderProjects();
-            });
+        <!-- Semana 2 -->
+        <article class="card-mission">
+          <div class="mission-badge-row">
+            <span class="badge-wk">Semana 2</span>
+            <span class="badge-stat">✓ Concluído</span>
+          </div>
+          <h3>Engenharia de Prompts & Canvas</h3>
+          <p>
+            Imersão em fluxos no Gemini Canvas, técnicas de estruturação de prompts para vida acadêmica e dinâmicas colaborativas.
+          </p>
+          <ul class="deliv-list">
+            <li><span>💡</span> Estruturação de raciocínio com Gemini Canvas</li>
+            <li><span>🤝</span> Troca com o grupo de embaixadores</li>
+          </ul>
+        </article>
+
+        <!-- Semana 3 -->
+        <article class="card-mission" style="border-color: rgba(66, 133, 244, 0.45);">
+          <div class="mission-badge-row">
+            <span class="badge-wk" style="background: rgba(66, 133, 244, 0.25); color: #bfdbfe;">Semana 3</span>
+            <span class="badge-stat">✓ Validado no Check-out</span>
+          </div>
+          <h3>Desafios D1 & D2: Transforme seu Desafio</h3>
+          <p>
+            Aplicação do Google Gemini para identificar e transformar desafios cotidianos dos estudos em soluções inteligentes, acompanhado de publicações educativas.
+          </p>
+          <ul class="deliv-list">
+            <li><span>🎥</span> <a href="https://youtu.be/-hP82mRYf2M" target="_blank" rel="noopener">Vídeo Educativo no YouTube ↗</a></li>
+            <li><span>📱</span> <a href="https://vt.tiktok.com/ZSqV8uGf6/" target="_blank" rel="noopener">Conteúdo no TikTok ↗</a></li>
+            <li><span>💻</span> Portfólio "Gemini em Missão"</li>
+          </ul>
+        </article>
+
+        <!-- Em Andamento -->
+        <article class="card-mission" style="opacity: 0.9;">
+          <div class="mission-badge-row">
+            <span class="badge-wk" style="background: rgba(168, 85, 247, 0.15); color: #d8b4fe;">Próximos Passos</span>
+            <span class="badge-stat" style="color: #facc15;">⚡ Em Execução</span>
+          </div>
+          <h3>Multiplicação & Conexões Locais</h3>
+          <p>
+            Promoção de rodas de conversa e oficinas na universidade sobre uso ético e produtivo de IA, criando pontes entre estudantes de diferentes cursos.
+          </p>
+          <ul class="deliv-list">
+            <li><span>🏛️</span> Atividades no ambiente acadêmico (UFPE)</li>
+            <li><span>🌍</span> Parcerias e troca de conhecimento livre</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7 Caminhos -->
+    <section id="caminhos" class="section-wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Dimensões & Identidade</span>
+        <h2 class="sec-title">Os 7 Caminhos da Guardiã</h2>
+        <p class="sec-sub">
+          Sete facetas multidisciplinares que se entrelaçam no Novelo de Ideias para desenhar soluções com tecnologia, afeto e rigor técnico.
+        </p>
+      </div>
+
+      <div class="caminhos-grid">
+        <div class="caminho-card">
+          <span class="caminho-icon">💻</span>
+          <h3>1. Tecnologia & Full Stack</h3>
+          <p>Interfaces intuitivas, arquitetura limpa, prototipagem ágil e código moderno.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">🧠</span>
+          <h3>2. Inteligência Artificial</h3>
+          <p>Google Gemini, automações com modelos generativos e engenharia de contexto.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">❤️</span>
+          <h3>3. Saúde Digital</h3>
+          <p>Tecnologia a serviço da vida, prevenção, acolhimento e dados com sensibilidade.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">🎨</span>
+          <h3>4. Criatividade & Design</h3>
+          <p>Storytelling autoral (Ateliê Felino), comunicação visual e experiência de usuário.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">🎮</span>
+          <h3>5. Games & Gamificação</h3>
+          <p>Mecânicas de engajamento, micro-recompensas e incentivo ao aprendizado contínuo.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">♾️</span>
+          <h3>6. Inclusão & Acessibilidade</h3>
+          <p>Interfaces para todos, neurodiversidade e tecnologia verdadeiramente democrática.</p>
+        </div>
+        <div class="caminho-card">
+          <span class="caminho-icon">🌉</span>
+          <h3>7. Recife para o Mundo</h3>
+          <p>Raízes fortes no ecossistema pernambucano conectadas com desafios globais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section-wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Casos & Maratonas</span>
+        <h2 class="sec-title">Projetos em Destaque</h2>
+        <p class="sec-sub">
+          Soluções práticas desenhadas para hackathons e desafios reais com foco em impacto socioambiental, gestão pública e inteligência artificial.
+        </p>
+      </div>
+
+      <!-- Barra de Filtros -->
+      <div class="filter-bar" role="tablist" aria-label="Filtrar projetos por categoria">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos os Projetos</button>
+        <button class="filter-btn" data-filter="sustentabilidade" role="tab" aria-selected="false">🌱 Sustentabilidade & GovTech</button>
+        <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">🧠 IA & GenAI</button>
+        <button class="filter-btn" data-filter="hackathons" role="tab" aria-selected="false">🌌 Maratonas Globais</button>
+      </div>
+
+      <div class="proj-grid" id="proj-grid">
+        <!-- EcoRoutine -->
+        <article class="proj-card" data-category="sustentabilidade">
+          <div class="proj-tags-top">
+            <span class="tag-sm tag-highlight">Sustentabilidade</span>
+            <span class="tag-sm">ODS 7 & 13</span>
+            <span class="tag-sm">Quintessa Ideathon</span>
+          </div>
+          <h3>EcoRoutine 🌱</h3>
+          <p>
+            Diagnóstico interativo de consumo hídrico e energético. Calcula redução de despesas, emissões evitadas de CO2 e incentiva hábitos ecológicos através de badges gamificados.
+          </p>
+          <div class="chip-row">
+            <span class="chip">HTML5/JS</span>
+            <span class="chip">Gamificação</span>
+            <span class="chip">Clima</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/SouBeatrizKaroline" target="_blank" rel="noopener" class="proj-link">Ver no GitHub ↗</a>
+          </div>
+          <div class="proj-foot">
+            Projeto entregável desenvolvido no Ideathon de Sustentabilidade.
+          </div>
+        </article>
+
+        <!-- SisCAR+ -->
+        <article class="proj-card" data-category="sustentabilidade">
+          <div class="proj-tags-top">
+            <span class="tag-sm tag-blue">Finalista</span>
+            <span class="tag-sm">haCARthon</span>
+            <span class="tag-sm">GovTech</span>
+          </div>
+          <h3>SisCAR+ 🗺️</h3>
+          <p>
+            Plataforma desenhada para desmistificar e agilizar o Cadastro Ambiental Rural (CAR), simplificando a comunicação entre proprietários de terras e analistas ambientais.
+          </p>
+          <div class="chip-row">
+            <span class="chip">Inovação Aberta</span>
+            <span class="chip">UX Governamental</span>
+            <span class="chip">Pitch</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/SouBeatrizKaroline" target="_blank" rel="noopener" class="proj-link">Ver no GitHub ↗</a>
+          </div>
+          <div class="proj-foot">
+            Solução finalista apresentada em maratona de dados públicos.
+          </div>
+        </article>
+
+        <!-- 3 Dev.as DemAIs -->
+        <article class="proj-card" data-category="ai">
+          <div class="proj-tags-top">
+            <span class="tag-sm" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe;">Liderança</span>
+            <span class="tag-sm">Don't Skip Challenge</span>
+          </div>
+          <h3>3 Dev.as DemAIs 🚀</h3>
+          <p>
+            Liderança de time multidisciplinar no desafio intensivo da Adapta & NewHack, coordenando a criação de fluxos de produtividade e automação com inteligência artificial generativa.
+          </p>
+          <div class="chip-row">
+            <span class="chip">Liderança</span>
+            <span class="chip">GenAI</span>
+            <span class="chip">Automação</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/SouBeatrizKaroline" target="_blank" rel="noopener" class="proj-link">Ver no GitHub ↗</a>
+          </div>
+          <div class="proj-foot">
+            Coordenação técnica e facilitação de equipe ágil.
+          </div>
+        </article>
+
+        <!-- HackaGirls (DOGE AI Hackathon) -->
+        <article class="proj-card" data-category="ai">
+          <div class="proj-tags-top">
+            <span class="tag-sm" style="background: rgba(236, 72, 153, 0.2); color: #f472b6;">Mulheres na Tecnologia</span>
+            <span class="tag-sm">DOGE AI Hackathon</span>
+            <span class="tag-sm">Lablab.ai</span>
+          </div>
+          <h3>HackaGirls 💡</h3>
+          <p>
+            Equipe colaborativa feminina focada em prototipar soluções inovadoras com inteligência artificial generativa para impacto social e acessibilidade tecnológica.
+          </p>
+          <div class="chip-row">
+            <span class="chip">GenAI</span>
+            <span class="chip">Diversidade</span>
+            <span class="chip">Lablab.ai</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://lablab.ai/ai-hackathons/doge-ai-hackathon/hackagirls" target="_blank" rel="noopener" class="proj-link">Ver no Lablab.ai ↗</a>
+          </div>
+          <div class="proj-foot">
+            Iniciativa colaborativa em maratona global de IA.
+          </div>
+        </article>
+
+        <!-- NASA Space Apps -->
+        <article class="proj-card" data-category="hackathons">
+          <div class="proj-tags-top">
+            <span class="tag-sm" style="background: rgba(14, 165, 233, 0.2); color: #7dd3fc;">Global</span>
+            <span class="tag-sm">NASA Space Apps</span>
+          </div>
+          <h3>NASA Space Apps Challenge 🌌</h3>
+          <p>
+            Desenvolvimento de soluções tecnológicas a partir de repositórios de dados espaciais da NASA para resolver desafios críticos no planeta e no espaço.
+          </p>
+          <div class="chip-row">
+            <span class="chip">Open Data</span>
+            <span class="chip">Ciência</span>
+            <span class="chip">Global</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/SouBeatrizKaroline" target="_blank" rel="noopener" class="proj-link">Ver no GitHub ↗</a>
+          </div>
+          <div class="proj-foot">
+            Experiência internacional em maratona espacial.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="contact-box">
+        <h2>Vamos construir pontes e trocar ideias?</h2>
+        <p>
+          Conecte-se para parcerias acadêmicas, workshops sobre Google Gemini, trocas sobre hackathons ou projetos com impacto real.
+        </p>
+
+        <div class="social-row">
+          <button id="copy-portfolio-btn" type="button" class="btn-soc" style="cursor: pointer;">
+            <span>📋 Copiar Link</span>
+          </button>
+          <a href="https://www.linkedin.com/in/beatrizkcs/" target="_blank" rel="noopener" class="btn-soc">
+            <span>LinkedIn</span> ↗
+          </a>
+          <a href="https://github.com/SouBeatrizKaroline" target="_blank" rel="noopener" class="btn-soc">
+            <span>GitHub</span> ↗
+          </a>
+          <a href="https://www.youtube.com/@1aspiraqualquer" target="_blank" rel="noopener" class="btn-soc">
+            <span>YouTube</span> ↗
+          </a>
+          <a href="https://instagram.com/soubeatrizkaroline" target="_blank" rel="noopener" class="btn-soc">
+            <span>Instagram</span> ↗
+          </a>
+          <a href="https://tiktok.com/@soubeatrizkaroline" target="_blank" rel="noopener" class="btn-soc">
+            <span>TikTok</span> ↗
+          </a>
+        </div>
+        <p id="copy-toast" class="copy-toast" aria-live="polite">Link do portfólio copiado para a área de transferência! ✨</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Desenvolvido com carinho e propósito por <strong>Beatriz Karoline Cordeiro da Silva</strong> 🐾</p>
+      <p style="margin-top: 6px; font-size: 0.76rem;">
+        Estudante na Universidade Federal de Pernambuco (UFPE) • Embaixadora Estudantil Google 2026<br/>
+        #EmbaixadoresEstudantisGoogle • Projeto de iniciativa estudantil independente.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo da página" title="Voltar ao topo">
+    ↑
+  </button>
+
+  <!-- Scripts Interativos -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Menu Mobile Toggle
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', isOpen);
+          menuToggle.textContent = isOpen ? '✕' : '☰';
         });
 
-        // Search input event
-        projectSearch.addEventListener('input', (e) => {
-            searchQuery = e.target.value.trim();
-            renderProjects();
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.textContent = '☰';
+          });
         });
+      }
 
-        // Reset filters
-        function resetFilters() {
-            currentCategory = 'all';
-            searchQuery = '';
-            projectSearch.value = '';
-            categoryButtons.forEach(b => {
-                if(b.getAttribute('data-category') === 'all') {
-                    b.setAttribute('aria-pressed', 'true');
-                    b.classList.remove('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
-                    b.classList.add('bg-charcoal', 'text-cream');
-                } else {
-                    b.setAttribute('aria-pressed', 'false');
-                    b.classList.remove('bg-charcoal', 'text-cream');
-                    b.classList.add('bg-white', 'border', 'border-charcoal/15', 'text-charcoal');
-                }
-            });
-            renderProjects();
-        }
+      // Filtro Interativo de Projetos
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projCards = document.querySelectorAll('.proj-card');
 
-        document.getElementById('clear-filters').addEventListener('click', resetFilters);
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
 
-        // Modal functions
-        let lastFocusedElement = null;
+          const filter = btn.getAttribute('data-filter');
 
-        function openModal(id) {
-            lastFocusedElement = document.activeElement;
-            const project = projectsData.find(p => p.id === id);
-            if (!project) return;
-
-            const modalBody = document.getElementById('modal-body');
-            modalBody.innerHTML = `
-                <div class="space-y-4">
-                    <div class="flex items-center gap-2">
-                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-lilas text-charcoal">${project.category}</span>
-                        <span class="text-xs text-charcoal/60 font-medium">${project.estagio}</span>
-                    </div>
-                        <h2 id="modal-title" class="font-display font-extrabold text-2xl sm:text-3xl pr-12">${project.name}</h2>
-                        <p id="modal-description" class="text-base text-charcoal/80">${project.shortDesc}</p>
-                    
-                    <div class="space-y-3 pt-2">
-                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-triangle-exclamation text-googleYellow mr-1"></i> Problema ou Oportunidade</h4>
-                            <p class="text-sm text-charcoal/80">${project.problema}</p>
-                        </div>
-                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-lightbulb text-googleBlue mr-1"></i> Proposta</h4>
-                            <p class="text-sm text-charcoal/80">${project.proposta}</p>
-                        </div>
-                        <div class="bg-cream border border-charcoal/10 rounded-2xl p-4">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1"><i class="fa-solid fa-user-check text-googleGreen mr-1"></i> Minha Contribuição</h4>
-                            <p class="text-sm text-charcoal/80">${project.contribuicao}</p>
-                        </div>
-                    </div>
-
-                    <div class="pt-4 flex items-center justify-between border-t border-charcoal/10">
-                        <span class="text-xs font-semibold text-charcoal/75">🏆 Reconhecimento: ${project.reconhecimento}</span>
-                        <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-charcoal text-cream text-xs font-semibold hover:bg-charcoal/90 transition-all flex items-center gap-2">
-                            <span>Acessar projeto</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            `;
-
-            const modal = document.getElementById('project-modal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-            document.getElementById('modal-content').focus();
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('project-modal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-            if (lastFocusedElement) lastFocusedElement.focus();
-        }
-
-        // Close modal on Escape key
-        window.addEventListener('keydown', (e) => {
-            const modal = document.getElementById('project-modal');
-            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
-            if (e.key === 'Tab' && !modal.classList.contains('hidden')) {
-                const focusable = [...modal.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')];
-                if (!focusable.length) return;
-                const first = focusable[0];
-                const last = focusable[focusable.length - 1];
-                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-                if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-            }
-        });
-
-        // Close modal clicking outside
-        document.getElementById('project-modal').addEventListener('click', (e) => {
-            if (e.target.id === 'project-modal') {
-                closeModal();
-            }
-        });
-
-        // Interactive "Novelo de Ideias" State
-        let selectedTheme = 'estudos';
-        let selectedFormat = 'conteudo';
-
-        const suggestionsDb = {
-            'estudos-conteudo': 'Criar um carrossel educativo no Instagram explicando como usar o Gemini Canvas para organizar resumos de estudo em minutos.',
-            'estudos-jogo': 'Desenvolver um quiz rápido em HTML/JS sobre conceitos tecnológicos fundamentais com feedback em tempo real.',
-            'estudos-experiencia': 'Montar um roteiro de estudos colaborativo integrando ferramentas de IA e anotações visuais.',
-            'estudos-prototipo': 'Desenvolver um protótipo de planner inteligente baseado em prompts estruturados.',
-            
-            'comunidade-conteudo': 'Produzir um vídeo curto no TikTok demonstrando o impacto de iniciativas estudantis e redes de apoio.',
-            'comunidade-jogo': 'Criar uma dinâmica interativa de perguntas e respostas para engajar estudantes em eventos.',
-            'comunidade-experiencia': 'Organizar uma oficina prática de ideação criativa utilizando técnicas de prototipagem ágil.',
-            'comunidade-prototipo': 'Desenvolver uma landing page simples para conectar novos integrantes a grupos de estudo.',
-            
-            'sustentabilidade-conteudo': 'Escrever um artigo no LinkedIn sobre tecnologia verde e soluções para redução de desperdício em feiras.',
-            'sustentabilidade-jogo': 'Criar um mini-game de tomada de decisão sobre reciclagem e consumo consciente.',
-            'sustentabilidade-experiencia': 'Simular fluxos de economia circular aplicados a projetos locais.',
-            'sustentabilidade-prototipo': 'Estruturar o escopo de um aplicativo para mapear pontos de coleta de materiais.',
-            
-            'criatividade-conteudo': 'Compartilhar os bastidores de design e identidade visual deste próprio portfólio felino.',
-            'criatividade-jogo': 'Criar um gerador aleatório de desafios criativos para testar em mentorias.',
-            'criatividade-experiencia': 'Desenvolver uma galeria visual interativa de experimentos visuais com SVG.',
-            'criatividade-prototipo': 'Prototipar componentes de interface inspirados no conceito de laboratório criativo.'
-        };
-
-        function selectTheme(theme) {
-            selectedTheme = theme;
-            document.querySelectorAll('.theme-option').forEach(btn => {
-                btn.setAttribute('aria-pressed', 'false');
-                btn.classList.remove('bg-cream', 'border-googleBlue');
-                btn.classList.add('bg-white', 'border-charcoal/10');
-            });
-            const activeBtn = document.getElementById(`theme-${theme}`);
-            activeBtn.classList.remove('bg-white', 'border-charcoal/10');
-            activeBtn.classList.add('bg-cream', 'border-googleBlue');
-            activeBtn.setAttribute('aria-pressed', 'true');
-            updateSuggestion();
-        }
-
-        function selectFormat(format) {
-            selectedFormat = format;
-            document.querySelectorAll('.format-option').forEach(btn => {
-                btn.setAttribute('aria-pressed', 'false');
-                btn.classList.remove('bg-cream', 'border-googleBlue');
-                btn.classList.add('bg-white', 'border-charcoal/10');
-            });
-            const activeBtn = document.getElementById(`format-${format}`);
-            activeBtn.classList.remove('bg-white', 'border-charcoal/10');
-            activeBtn.classList.add('bg-cream', 'border-googleBlue');
-            activeBtn.setAttribute('aria-pressed', 'true');
-            updateSuggestion();
-        }
-
-        function updateSuggestion() {
-            const key = `${selectedTheme}-${selectedFormat}`;
-            const resultEl = document.getElementById('suggestion-result');
-            const chibiDialog = document.getElementById('chibi-dialogo');
-            
-            if (suggestionsDb[key]) {
-                resultEl.textContent = suggestionsDb[key];
-                chibiDialog.textContent = 'Chibi sugere: Essa combinação tem potencial de gato curioso!';
+          projCards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (filter === 'all' || cardCat === filter) {
+              card.style.display = 'flex';
+              card.style.animation = 'fadeIn 0.3s ease';
             } else {
-                resultEl.textContent = 'Explore a combinação entre tema e formato para gerar uma ideia inédita.';
-                chibiDialog.textContent = 'Chibi está pronto para conectar ideias!';
+              card.style.display = 'none';
             }
-        }
+          });
+        });
+      });
 
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+      // Botão Copiar Link
+      const copyBtn = document.getElementById('copy-portfolio-btn');
+      const copyToast = document.getElementById('copy-toast');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const isOpen = !mobileMenu.classList.contains('hidden');
-            mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
-            mobileMenuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
-            mobileMenuButton.querySelector('i').className = `fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'} text-lg`;
+      if (copyBtn && copyToast) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText('https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/');
+            copyToast.classList.add('show');
+            setTimeout(() => {
+              copyToast.classList.remove('show');
+            }, 3000);
+          } catch (err) {
+            console.error('Falha ao copiar:', err);
+          }
+        });
+      }
+
+      // Botão Voltar ao Topo
+      const backToTop = document.getElementById('back-to-top');
+      if (backToTop) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
         });
 
-        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            mobileMenuButton.setAttribute('aria-expanded', 'false');
-            mobileMenuButton.setAttribute('aria-label', 'Abrir menu');
-            mobileMenuButton.querySelector('i').className = 'fa-solid fa-bars text-lg';
-        }));
-
-        // Initial render on load
-        window.onload = function() {
-            renderProjects();
-            selectTheme('estudos');
-            selectFormat('conteudo');
-        };
-    </script>
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 </body>
 </html>

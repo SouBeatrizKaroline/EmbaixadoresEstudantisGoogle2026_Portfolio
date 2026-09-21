@@ -1,139 +1,112 @@
+# 🐾 Portfólio 2026 | Embaixadora Estudantil Google & Gemini em Missão
+
 <div align="center">
 
-# 🐾 Beatriz Karoline
-### Embaixadora Estudantil do Google · 2026
+![Status](https://img.shields.io/badge/Status-Ativa%20🟢-34A853?style=for-the-badge)
+![Programa](https://img.shields.io/badge/Google-Embaixadores%20Estudantis%202026-4285F4?style=for-the-badge&logo=google)
+![Tecnologia](https://img.shields.io/badge/AI-Google%20Gemini-8B5CF6?style=for-the-badge)
+![Local](https://img.shields.io/badge/UFPE-Recife--PE-EA4335?style=for-the-badge)
+![Acessibilidade](https://img.shields.io/badge/A11y-WCAG%20Semântico-06B6D4?style=for-the-badge)
 
-**Curiosidade de gato. Vontade de transformar.**
+**Tecnologia que cuida, inclui, ensina e transforma realidades.**  
+*Portfólio interativo de missões, projetos de impacto socioambiental, hackathons e liderança estudantil no Programa de Embaixadores Estudantis do Google 2026.*
 
-Tecnologia, criatividade e pessoas conectadas por um fio de ideias.
-
-[LinkedIn](https://www.linkedin.com/in/beatrizkcs/) · [Instagram](https://www.instagram.com/1aspiraqualquer/) · [TikTok](https://www.tiktok.com/@1aspiraqualquer) · [YouTube](https://www.youtube.com/@1aspiraqualquer)
+🔗 **Acesse o portfólio online:** [soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle](https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/)
 
 </div>
 
 ---
 
-## ✨ Toda ideia começa com uma curiosidade
+## 🌟 Sobre Mim & Propósito
 
-Este é meu portfólio pessoal de 2026: um espaço para reunir projetos, compartilhar descobertas e apresentar minha atuação como **Embaixadora Estudantil do Google**.
+Sou **Beatriz Karoline Cordeiro da Silva**, estudante na **Universidade Federal de Pernambuco (UFPE)**, desenvolvedora Full Stack e participante selecionada do **Programa Embaixadores Estudantis do Google 2026**.
 
-Minha trajetória conecta diferentes interesses: inteligência artificial, educação, design, games, comunicação e impacto social. Gosto de explorar como essas áreas se encontram e o que podemos construir quando diferentes perspectivas trabalham juntas.
+Minha atuação é guiada pela integração entre **inteligência artificial, desenvolvimento de software, acessibilidade, neurodiversidade, saúde digital e impacto social**. Acredito na tecnologia como um instrumento democrático de cuidado e aprendizagem lúdica.
 
-Por aqui, cada projeto é uma oportunidade de experimentar, aprender e transformar uma pergunta em algo que outras pessoas possam conhecer.
-
-E, claro, tudo passa pela supervisão felina. 🐈‍⬛
-
-## 🌈 Google, aprendizagem e comunidade
-
-Aprender fica mais interessante quando a descoberta circula.
-
-Minha atuação como embaixadora estudantil faz parte dessa vontade de aproximar pessoas da tecnologia, explorar possibilidades criativas e compartilhar experiências de aprendizagem.
-
-Este portfólio reúne espaço para:
-
-- 🧠 **Inteligência artificial:** descobertas, experimentações e aplicações criativas.
-- 💡 **Gemini Canvas:** exploração de ideias, conteúdos e experiências interativas.
-- 🤝 **Comunidade:** encontros, conexões e troca de conhecimento.
-- 🎨 **Comunicação:** formas visuais e acolhedoras de apresentar assuntos.
-- 🌱 **Construção contínua:** projetos que evoluem com prática, colaboração e feedback.
-
-## 🐈 Sete vidas, muitas possibilidades
-
-| Minha dimensão | O que me move |
-| :--- | :--- |
-| 💻 Tecnologia | Transformar ideias em experiências digitais. |
-| 🧠 Inteligência artificial | Explorar possibilidades e fazer perguntas melhores. |
-| 🎨 Design | Dar forma às ideias com clareza e personalidade. |
-| 🎮 Games | Conectar narrativa, interação e descoberta. |
-| 📚 Educação | Compartilhar conhecimento de um jeito próximo. |
-| 📣 Comunicação | Criar conteúdos que despertem interesse e conversa. |
-| 🌍 Impacto social | Pensar em soluções a partir de pessoas e contextos reais. |
-
-## 🚀 Projetos que fazem parte da trajetória
-
-Meu repertório reúne propostas, protótipos e trabalhos colaborativos em diferentes áreas. Entre eles:
-
-| Projeto | Universo explorado |
-| :--- | :--- |
-| **JúriLab** | Educação jurídica e prática forense com inteligência artificial. |
-| **NortIA** | Inteligência de processos e oportunidades de automação. |
-| **DestinAI** | Tecnologia aplicada ao desperdício de alimentos e à cadeia agrícola. |
-| **Frutos do Cerrado** | Sustentabilidade, comunidades e valorização de saberes tradicionais. |
-| **RaízesGo** | Conexões entre produtores locais e compradores institucionais. |
-| **ReClapp** | Reciclagem, gamificação e educação ambiental. |
-| **TABE — O Dilema de Tabe Jones** | Narrativa interativa para explorar caminhos na tecnologia. |
-| **Solitude** | Games, recomeços e amor próprio. |
-| **HistoricToken** | Preservação e valorização do patrimônio cultural. |
-| **Kará** | Agricultura familiar e redução de desperdício em feiras. |
-| **BB Rendinha** | Educação financeira gamificada. |
-| **Os Greens e o Resgate do Sábado Animado** | Construção narrativa e desenvolvimento de jogos. |
-
-Essa seleção apresenta parte da minha trajetória. Cada projeto tem seu próprio contexto, equipe, contribuição e estágio de desenvolvimento.
-
-## 🎨 Um portfólio com personalidade felina
-
-A identidade deste projeto combina **fofura, presença visual e curiosidade**.
-
-Gatos conduzem o universo criativo: novelos conectam ideias, pequenas descobertas aparecem pelo caminho e os detalhes convidam a explorar.
-
-Cachorros, pintinhos, galinhas e galos também podem fazer participações especiais — a direção de arte continua nas patas dos felinos.
-
-A proposta visual valoriza:
-
-- Tipografia expressiva e leitura confortável.
-- Cores acolhedoras com pontos de energia.
-- Ilustrações cheias de personalidade.
-- Conteúdo organizado para explorar com calma.
-- Interações que acrescentem significado à experiência.
-
-## 🛠️ Da ideia ao portfólio
-
-O projeto nasceu de uma proposta de criação no **Gemini Canvas** e evoluiu para uma página estática, responsiva e acessível, organizada neste repositório.
-
-### Executar localmente
-
-Não há etapa de compilação nem dependências para instalar: basta abrir `index.html` no navegador. Para reproduzir o comportamento da publicação com mais fidelidade, também é possível servir a pasta com qualquer servidor HTTP local.
-
-### Estrutura
-
-- `index.html`: conteúdo, estilos e interações do portfólio.
-- `favicon.svg`: ícone felino exibido na aba do navegador.
-- `og-preview.png`: imagem usada na prévia de compartilhamento em redes sociais.
-
-O site inclui busca e filtros de projetos, modal acessível, navegação responsiva, foco visível, suporte a teclado e preferência por movimento reduzido.
-
-## 🌱 Sempre em construção
-
-Um portfólio acompanha quem a gente está se tornando.
-
-Este espaço pode ganhar novos projetos, registros de comunidade, experimentos e melhorias ao longo de 2026. A intenção é mostrar o trabalho com contexto, reconhecer as colaborações e compartilhar o que vai sendo construído.
-
-**Ideias, sugestões e conexões são bem-vindas.**
-
-## 💬 Vamos puxar o fio de uma ideia?
-
-Tenho interesse em conversar sobre projetos, criatividade, inteligência artificial, educação e comunidade.
-
-Se alguma dessas áreas também desperta sua curiosidade, vamos nos conectar:
-
-- 💼 [LinkedIn — Beatriz Karoline](https://www.linkedin.com/in/beatrizkcs/)
-- 📸 [Instagram — @1aspiraqualquer](https://www.instagram.com/1aspiraqualquer/)
-- 🎬 [TikTok — @1aspiraqualquer](https://www.tiktok.com/@1aspiraqualquer)
-- ▶️ [YouTube — @1aspiraqualquer](https://www.youtube.com/@1aspiraqualquer)
-- 🗂️ [Portfólio anterior](https://soubeatrizkaroline.goskip.app/)
+> *“Eu não quero apenas aprender tecnologia. Quero conectar tecnologia, saúde, educação, inteligência artificial e inclusão para criar coisas que façam diferença real na vida das pessoas.”*
 
 ---
 
-### Créditos e contexto
+## 🐈‍⬛ Identidade Visual: A Guardiã das Sete Vidas
 
-Este é um **portfólio pessoal**, com destaque para minha atuação como Embaixadora Estudantil do Google em 2026. Não é um site institucional do Google.
+Inspirada no conceito autoral do **Novelo de Ideias** e do universo literário felino, minha jornada é representada pela metáfora da *Guardiã das Sete Vidas* — uma gata preta de olhos verdes, vigilante, curiosa e observadora, cujos fios de lã se desenrolam em 7 caminhos luminosos de conhecimento:
 
-Projetos coletivos devem ser acompanhados dos respectivos créditos. Marcas e nomes mencionados pertencem aos seus titulares.
+1. **💻 Tecnologia & Full Stack:** Interfaces modernas, protótipos funcionais e código limpo.
+2. **🧠 Inteligência Artificial:** Google Gemini, engenharia de prompts contextualizada e automação generativa.
+3. **❤️ Saúde Digital:** Soluções tecnológicas focadas em acolhimento e dados sensíveis.
+4. **🎨 Criatividade & Design:** Storytelling, narrativa visual e empatia na experiência do usuário.
+5. **🎮 Games & Gamificação:** Aplicação de mecânicas lúdicas para engajar no aprendizado.
+6. **♾️ Inclusão & Acessibilidade:** Foco em neurodiversidade e interfaces intuitivas para todos.
+7. **🌉 Recife para o Mundo:** Conexão entre o ecossistema pernambucano de inovação e os desafios globais.
+
+---
+
+## 🏆 Projetos em Destaque
+
+- **🌱 EcoRoutine (Sustentabilidade & ODS 7/13):** Aplicação para diagnóstico e gamificação da redução do consumo de energia e água, calculando economia financeira e CO2 evitado. *(Desenvolvido no Ideathon Quintessa)*
+- **🗺️ SisCAR+ (GovTech & Inovação Aberta):** Interface simplificada para análise e submissão do Cadastro Ambiental Rural, promovendo transparência e celeridade aos pequenos proprietários e analistas. *(Projeto Finalista no haCARthon)*
+- **👩‍💻 3 Dev.as DemAIs (Liderança em IA):** Gestão e facilitação de equipe multidisciplinar feminina em maratona de inteligência artificial generativa. *(Don't Skip Challenge / Adapta & NewHack)*
+- **💡 HackaGirls (Diversidade & GenAI):** Prototipagem colaborativa com foco em inclusão e soluções de impacto em maratona internacional de IA. *(DOGE AI Hackathon / Lablab.ai)*
+- **🌌 NASA Space Apps Challenge:** Exploração de repositórios de dados científicos e espaciais abertos para solução de desafios terrestres e cósmicos.
+
+---
+
+## 🚀 Gemini em Missão: Jornada de Embaixadora 2026
+
+Registro contínuo das missões e entregas realizadas no Programa de Embaixadores Estudantis do Google:
+
+| Semana | Missão | Status | Entregas / Destaques |
+|---|---|---|---|
+| **Semana 1** | Onboarding & Boas-Vindas | Concluído ✓ | Selo Explorador e integração com canais e diretrizes oficiais |
+| **Semana 2** | Engenharia de Prompts & Canvas | Concluído ✓ | Técnicas de estruturação de prompts e dinâmica colaborativa |
+| **Semana 3** | Desafios D1 & D2 (Transforme seu Desafio) | Validado ✓ | Publicações educativas ([YouTube](https://youtu.be/-hP82mRYf2M), [TikTok](https://vt.tiktok.com/ZSqV8uGf6/)) e portfólio |
+| **Próximos Passos** | Multiplicação & Conexões Locais | Em Execução ⚡ | Rodas de conversa, oficinas de IA na UFPE e parcerias acadêmicas |
+
+---
+
+## 🛠️ Tecnologias & Melhores Práticas
+
+- **Desenvolvimento Front-end:** HTML5 Semântico, CSS3 Moderno (Custom Properties, Flexbox, Grid, Animações Suaves), JavaScript Moderno (Vanilla ES6+).
+- **Acessibilidade (a11y) & SEO:**
+  - Skip Links para navegação direta via teclado.
+  - Suporte a `prefers-reduced-motion` para usuários sensíveis a movimento.
+  - Metatags completas Open Graph e Twitter Cards para compartilhamento em redes sociais.
+  - Marcação de dados estruturados com Schema.org (JSON-LD) para mecanismos de busca.
+- **Interatividade:** Filtro dinâmico de projetos por categoria, menu mobile acessível, botão flutuante para voltar ao topo e atalho para copiar link do portfólio.
+- **Ecossistema Google:** Google Gemini (1.5 Pro / Flash), Gemini Canvas, Google AI Pro, Google Workspace.
+
+---
+
+## 💻 Como Rodar Localmente
+
+Por ser um projeto web estático em arquivo único, você não precisa de bundlers ou instalações pesadas:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/SouBeatrizKaroline/Portfolio2026_EmbaixadorEstudantilGoogle.git
+   cd Portfolio2026_EmbaixadorEstudantilGoogle
+   ```
+
+2. Abra o arquivo `index.html` diretamente no seu navegador, ou suba um servidor local simples:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Em seguida, acesse no navegador: `http://localhost:8000`
+
+---
+
+## 🌐 Conecte-se Comigo
+
+- **LinkedIn:** [linkedin.com/in/beatrizkcs](https://www.linkedin.com/in/beatrizkcs/)
+- **GitHub:** [github.com/SouBeatrizKaroline](https://github.com/SouBeatrizKaroline)
+- **YouTube:** [@1aspiraqualquer](https://www.youtube.com/@1aspiraqualquer)
+- **TikTok:** [@soubeatrizkaroline](https://tiktok.com/@soubeatrizkaroline)
+- **Instagram:** [@soubeatrizkaroline](https://instagram.com/soubeatrizkaroline)
+
+---
 
 <div align="center">
 
-**Feito com curiosidade, criatividade e supervisão felina.**
-
-🐾 **Beatriz Karoline · 2026**
+*#EmbaixadoresEstudantisGoogle • Projeto de iniciativa estudantil independente desenvolvido com carinho e propósito por Beatriz Karoline.*
 
 </div>
