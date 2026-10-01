@@ -11,7 +11,7 @@
 **Tecnologia que cuida, inclui, ensina e transforma realidades.**  
 *Portfólio interativo de missões, projetos de impacto socioambiental, hackathons e liderança estudantil no Programa de Embaixadores Estudantis do Google 2026.*
 
-🔗 **Acesse o portfólio online:** [soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle](https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/)
+🔗 **Acesse o portfólio online:** [soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio](https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/)
 
 </div>
 
@@ -83,8 +83,8 @@ Por ser um projeto web estático em arquivo único, você não precisa de bundle
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SouBeatrizKaroline/Portfolio2026_EmbaixadorEstudantilGoogle.git
-   cd Portfolio2026_EmbaixadorEstudantilGoogle
+   git clone https://github.com/SouBeatrizKaroline/EmbaixadoresEstudantisGoogle2026_Portfolio.git
+   cd EmbaixadoresEstudantisGoogle2026_Portfolio
    ```
 
 2. Abra o arquivo `index.html` diretamente no seu navegador, ou suba um servidor local simples:

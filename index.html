@@ -13,14 +13,14 @@
 
   <!-- Favicon & Canonical -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="canonical" href="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/" />
+  <link rel="canonical" href="https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/" />
 
   <!-- Metatags Open Graph & Redes Sociais -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Beatriz Karoline | Embaixadora Estudantil Google 2026" />
   <meta property="og:description" content="Portfólio interativo de missões práticas com Google Gemini, projetos de inovação social, GovTech e liderança estudantil de Beatriz Karoline (UFPE)." />
-  <meta property="og:url" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/" />
-  <meta property="og:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png" />
+  <meta property="og:url" content="https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/" />
+  <meta property="og:image" content="https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/og-preview.png" />
   <meta property="og:site_name" content="Portfólio Beatriz Karoline" />
   <meta property="og:locale" content="pt_BR" />
 
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Beatriz Karoline | Embaixadora Estudantil Google 2026" />
   <meta name="twitter:description" content="Missões práticas com Gemini, projetos em GovTech, sustentabilidade e liderança estudantil na UFPE." />
-  <meta name="twitter:image" content="https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/og-preview.png" />
+  <meta name="twitter:image" content="https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/og-preview.png" />
 
   <!-- Schema.org Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -42,7 +42,7 @@
       "@type": "CollegeOrUniversity",
       "name": "Universidade Federal de Pernambuco (UFPE)"
     },
-    "url": "https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/",
+    "url": "https://soubeatrizkaroline.github.io/EmbaixadoresEstudantisGoogle2026_Portfolio/",
     "sameAs": [
       "https://github.com/SouBeatrizKaroline",
       "https://www.linkedin.com/in/beatrizkcs/",
@@ -1358,17 +1358,23 @@
       // Botão Copiar Link
       const copyBtn = document.getElementById('copy-portfolio-btn');
       const copyToast = document.getElementById('copy-toast');
+      const portfolioUrl = document.querySelector('link[rel="canonical"]').href;
+      let copyToastTimeout;
 
       if (copyBtn && copyToast) {
         copyBtn.addEventListener('click', async () => {
           try {
-            await navigator.clipboard.writeText('https://soubeatrizkaroline.github.io/Portfolio2026_EmbaixadorEstudantilGoogle/');
+            await navigator.clipboard.writeText(portfolioUrl);
+            copyToast.textContent = 'Link do portfólio copiado para a área de transferência! ✨';
+            clearTimeout(copyToastTimeout);
             copyToast.classList.add('show');
-            setTimeout(() => {
+            copyToastTimeout = setTimeout(() => {
               copyToast.classList.remove('show');
             }, 3000);
           } catch (err) {
-            console.error('Falha ao copiar:', err);
+            clearTimeout(copyToastTimeout);
+            copyToast.textContent = 'Não foi possível copiar automaticamente. Copie este link: ' + portfolioUrl;
+            copyToast.classList.add('show');
           }
         });
       }
